@@ -1,0 +1,70 @@
+<!-- Interior Section -->
+<section class="py-24 sm:py-32 bg-[#0a1628]">
+    <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <!-- Left: Text Content -->
+                <div class="translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
+                    <p class="text-sm font-light tracking-[0.3em] uppercase text-white/60 mb-4">
+                        Cabin Experience
+                    </p>
+
+                    <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-white">
+                        Interior Amenities
+                    </h2>
+
+                    <!-- Amenities List -->
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-xl font-light text-white/80">Premium leather executive seating with sliding and recline capability</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-xl font-light text-white/80">Stowable tables provide a stable surface for dining or productivity</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-xl font-light text-white/80">Refreshment center with beverage and snack storage</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-xl font-light text-white/80">Power outlets, reading lights, and air vents</span>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <svg class="w-6 h-6 text-white flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                            </svg>
+                            <span class="text-xl font-light text-white/80">A compact lavatory is available for occasional use</span>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- Right: Interior Image -->
+                <div class="translate-y-12 opacity-0 transition-all duration-1000 ease-out flex justify-center md:justify-end" data-animate style="transition-delay: 150ms;">
+                    <div class="relative rounded-lg overflow-hidden shadow-2xl max-w-md">
+                        <img
+                            src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ1/cj1-interior.jpg"
+                            alt="Citation CJ1 Interior"
+                            class="w-full h-auto object-cover"
+                            onerror="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/CJ1/cj1-background.png'"
+                        />
+                        <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-lg pointer-events-none"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

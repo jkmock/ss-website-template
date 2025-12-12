@@ -1,0 +1,17 @@
+/*
+Theme Name: SkySouth Website
+Author: Jackson
+Description: SkySouth luxury private jet charter theme with Tailwind CSS, converted from React/Next.js design
+Version: 1.0
+Requires at least: 6.0
+Tested up to: 6.4
+Requires PHP: 7.4
+License: Private
+Text Domain: skysouth-website
+*/
+
+/*
+ * This is the theme header file required by WordPress.
+ * The actual compiled CSS is located in /dist/style.css
+ * To modify styles, edit /src/style.css and run: npm run build
+ */
