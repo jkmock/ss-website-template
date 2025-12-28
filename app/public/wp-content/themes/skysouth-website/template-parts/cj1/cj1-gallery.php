@@ -35,7 +35,7 @@
                         </div>
                         <div class="gallery-slide min-w-full h-full">
                             <img
-                                src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ1/cj1-background.png"
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ1/cj1-background.jpg"
                                 alt="Citation CJ1 Detail"
                                 class="w-full h-full object-cover"
                             />

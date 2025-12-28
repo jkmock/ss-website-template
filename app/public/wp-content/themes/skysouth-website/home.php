@@ -11,88 +11,111 @@ get_header();
 
 <div class="min-h-screen bg-white">
     <!-- Page Header -->
-    <section class="pt-32 pb-16 bg-gradient-to-b from-gray-50 to-white">
+    <section class="pt-32 pb-16 bg-[#0a1628]">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-4xl mx-auto text-center">
-                <h1 class="font-serif text-4xl sm:text-5xl font-light mb-4">
+                <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-light mb-4 text-white">
                     Blog
                 </h1>
-                <p class="text-lg text-muted-foreground font-light">
-                    Latest news and updates from SkySouth
+                <p class="text-lg text-white/70 font-light">
+                    News, insights, and updates from the SkySouth team
                 </p>
             </div>
         </div>
     </section>
 
     <!-- Blog Posts -->
-    <main class="py-16">
+    <main class="py-16 bg-gray-50">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-6xl mx-auto">
+            <div class="max-w-5xl mx-auto">
                 <?php if (have_posts()) : ?>
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="space-y-8">
                         <?php while (have_posts()) : the_post(); ?>
-                            <article class="group">
-                                <?php if (has_post_thumbnail()) : ?>
-                                    <a href="<?php the_permalink(); ?>" class="block mb-4 overflow-hidden rounded-lg">
-                                        <?php the_post_thumbnail('skysouth-featured', array('class' => 'w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105')); ?>
-                                    </a>
-                                <?php endif; ?>
-
-                                <div class="space-y-3">
-                                    <!-- Meta -->
-                                    <div class="flex items-center gap-4 text-sm text-muted-foreground">
-                                        <time datetime="<?php echo get_the_date('c'); ?>">
-                                            <?php echo get_the_date(); ?>
-                                        </time>
-                                        <?php if (has_category()) : ?>
-                                            <span>•</span>
-                                            <span><?php the_category(', '); ?></span>
-                                        <?php endif; ?>
-                                    </div>
-
-                                    <!-- Title -->
-                                    <h2 class="font-serif text-2xl font-light">
-                                        <a href="<?php the_permalink(); ?>" class="hover:text-primary transition-colors">
-                                            <?php the_title(); ?>
-                                        </a>
-                                    </h2>
-
-                                    <!-- Excerpt -->
-                                    <?php if (has_excerpt()) : ?>
-                                        <p class="text-foreground/70 font-light leading-relaxed">
-                                            <?php echo wp_trim_words(get_the_excerpt(), 20); ?>
-                                        </p>
+                            <article class="bg-white border border-gray-200 overflow-hidden hover:shadow-lg transition-shadow duration-300">
+                                <div class="grid grid-cols-1 <?php echo has_post_thumbnail() ? 'md:grid-cols-3' : ''; ?>">
+                                    <?php if (has_post_thumbnail()) : ?>
+                                        <!-- Featured Image -->
+                                        <div class="md:col-span-1">
+                                            <a href="<?php the_permalink(); ?>" class="block h-full">
+                                                <?php the_post_thumbnail('medium_large', array('class' => 'w-full h-full object-cover min-h-[250px]')); ?>
+                                            </a>
+                                        </div>
+                                        <!-- Content with Image -->
+                                        <div class="md:col-span-2 p-8">
+                                    <?php else : ?>
+                                        <!-- Content without Image - Full Width -->
+                                        <div class="p-8">
                                     <?php endif; ?>
+                                        <div class="space-y-4">
+                                            <!-- Meta -->
+                                            <div class="flex items-center gap-4 text-sm text-gray-600">
+                                                <time datetime="<?php echo get_the_date('c'); ?>" class="font-medium">
+                                                    <?php echo get_the_date(); ?>
+                                                </time>
+                                                <?php if (has_category()) : ?>
+                                                    <span>•</span>
+                                                    <div class="flex gap-2">
+                                                        <?php
+                                                        $categories = get_the_category();
+                                                        foreach ($categories as $category) {
+                                                            echo '<span class="inline-block bg-[#0a1628] text-white text-xs px-3 py-1 font-light">' . esc_html($category->name) . '</span>';
+                                                        }
+                                                        ?>
+                                                    </div>
+                                                <?php endif; ?>
+                                            </div>
 
-                                    <!-- Read More -->
-                                    <a href="<?php the_permalink(); ?>" class="inline-flex items-center text-sm font-medium text-primary hover:text-primary/80 transition-colors">
-                                        Read More
-                                        <svg class="ml-2 h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                                        </svg>
-                                    </a>
+                                            <!-- Title -->
+                                            <h2 class="font-serif text-3xl font-light text-foreground">
+                                                <a href="<?php the_permalink(); ?>" class="hover:text-[#0a1628]/70 transition-colors">
+                                                    <?php the_title(); ?>
+                                                </a>
+                                            </h2>
+
+                                            <!-- Excerpt -->
+                                            <p class="text-foreground/70 font-light leading-relaxed text-lg">
+                                                <?php echo has_excerpt() ? wp_trim_words(get_the_excerpt(), 30) : wp_trim_words(get_the_content(), 30); ?>
+                                            </p>
+
+                                            <!-- Read More -->
+                                            <div class="pt-2">
+                                                <a href="<?php the_permalink(); ?>" class="inline-flex items-center gap-2 text-[#0a1628] font-medium hover:text-[#0a1628]/70 transition-colors">
+                                                    Read Article
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M5 12h14"/>
+                                                        <path d="m12 5 7 7-7 7"/>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </article>
                         <?php endwhile; ?>
                     </div>
 
                     <!-- Pagination -->
-                    <div class="mt-16 flex justify-center">
+                    <div class="mt-12 flex justify-center gap-2">
                         <?php
                         the_posts_pagination(array(
                             'mid_size'  => 2,
-                            'prev_text' => __('&larr; Previous', 'skysouth-website'),
-                            'next_text' => __('Next &rarr;', 'skysouth-website'),
+                            'prev_text' => __('← Previous', 'skysouth-website'),
+                            'next_text' => __('Next →', 'skysouth-website'),
+                            'before_page_number' => '',
                             'class'     => 'flex gap-2',
                         ));
                         ?>
                     </div>
 
                 <?php else : ?>
-                    <div class="text-center py-16">
-                        <p class="text-xl text-muted-foreground mb-8">No posts found. Create your first blog post!</p>
+                    <div class="text-center py-16 bg-white border border-gray-200">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mx-auto mb-4 text-gray-400">
+                            <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                        </svg>
+                        <p class="text-xl text-gray-600 font-light mb-8">No posts found. Create your first blog post!</p>
                         <?php if (current_user_can('publish_posts')) : ?>
-                            <a href="<?php echo admin_url('post-new.php'); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all outline-none bg-primary text-primary-foreground hover:bg-primary/90 h-10 px-8">
+                            <a href="<?php echo admin_url('post-new.php'); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none bg-[#0a1628] text-white hover:bg-[#0a1628]/90 h-12 px-8">
                                 Create Your First Post
                             </a>
                         <?php endif; ?>

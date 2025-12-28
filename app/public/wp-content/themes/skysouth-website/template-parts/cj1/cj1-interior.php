@@ -59,7 +59,7 @@
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ1/cj1-interior.jpg"
                             alt="Citation CJ1 Interior"
                             class="w-full h-auto object-cover"
-                            onerror="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/CJ1/cj1-background.png'"
+                            onerror="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/CJ1/cj1-background.jpg'"
                         />
                         <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-lg pointer-events-none"></div>
                     </div>

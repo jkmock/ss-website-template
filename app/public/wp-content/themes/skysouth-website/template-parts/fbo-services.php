@@ -33,7 +33,7 @@ $icons = array(
 <section id="fbo-services" class="py-24 sm:py-32 bg-gray-100">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
-        <div class="mb-16 text-center">
+        <div class="mb-16 text-center translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
             <p class="text-m font-light tracking-[0.3em] uppercase text-foreground/60 mb-4">
                 Premium Facilities
             </p>
@@ -43,7 +43,7 @@ $icons = array(
         </div>
 
         <!-- Image Section -->
-        <div class="max-w-7xl mx-auto mb-16">
+        <div class="max-w-7xl mx-auto mb-16 translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate style="transition-delay: 150ms;">
             <div class="flex justify-center">
                 <div class="relative h-[400px] lg:h-[500px] w-full max-w-5xl">
                     <img
@@ -58,8 +58,8 @@ $icons = array(
         <!-- Services Grid - Horizontal -->
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <?php foreach ($services as $service) : ?>
-                    <div class="flex flex-col items-center text-center space-y-4">
+                <?php foreach ($services as $index => $service) : ?>
+                    <div class="flex flex-col items-center text-center space-y-4 translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate style="transition-delay: <?php echo 300 + ($index * 100); ?>ms;">
                         <!-- Large Icon -->
                         <div class="text-primary mb-2">
                             <?php echo $icons[$service['icon']]; ?>
@@ -82,10 +82,10 @@ $icons = array(
         <!-- CTA Buttons Section -->
         <div class="max-w-7xl mx-auto mt-16">
             <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8">
+                <a href="<?php echo esc_url(home_url('/fbo-services')); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8">
                     Learn More
                 </a>
-                <a href="#fbo-hours" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground h-12 px-8">
+                <a href="<?php echo esc_url(home_url('/fbo-services#fbo-hours')); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none border-2 border-primary bg-transparent text-primary hover:bg-primary hover:text-primary-foreground h-12 px-8">
                     FBO Hours
                 </a>
             </div>

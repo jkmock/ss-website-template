@@ -33,12 +33,11 @@
                 </a>
                 <!-- Fleet Dropdown -->
                 <div class="relative fleet-dropdown">
-                    <a
-                        href="<?php echo esc_url(home_url('/#fleet')); ?>"
+                    <button
                         class="nav-link text-base font-light tracking-widest uppercase transition-colors text-white hover:text-white/80"
                     >
                         Fleet
-                    </a>
+                    </button>
                     <div class="fleet-dropdown-menu absolute top-full left-0 mt-2 w-64 bg-white shadow-xl border border-border overflow-hidden opacity-0 invisible transition-all duration-200">
                         <a href="<?php echo esc_url(home_url('/citation-cj1')); ?>" class="block px-6 py-4 text-base font-light text-foreground hover:bg-gray-50 transition-colors border-b border-border">
                             Citation CJ1
@@ -60,13 +59,13 @@
                         Services
                     </button>
                     <div class="services-dropdown-menu absolute top-full left-0 mt-2 w-64 bg-white shadow-xl border border-border overflow-hidden opacity-0 invisible transition-all duration-200">
-                        <a href="<?php echo esc_url(home_url('/#luxury-travel')); ?>" class="block px-6 py-4 text-base font-light text-foreground hover:bg-gray-50 transition-colors border-b border-border last:border-b-0">
+                        <a href="<?php echo esc_url(home_url('/private-travel')); ?>" class="block px-6 py-4 text-base font-light text-foreground hover:bg-gray-50 transition-colors border-b border-border last:border-b-0">
                             Private Travel
                         </a>
-                        <a href="<?php echo esc_url(home_url('/#medical')); ?>" class="block px-6 py-4 text-base font-light text-foreground hover:bg-gray-50 transition-colors border-b border-border last:border-b-0">
+                        <a href="<?php echo esc_url(home_url('/medical-services')); ?>" class="block px-6 py-4 text-base font-light text-foreground hover:bg-gray-50 transition-colors border-b border-border last:border-b-0">
                             Medical Flights
                         </a>
-                        <a href="<?php echo esc_url(home_url('/#fbo-services')); ?>" class="block px-6 py-4 text-base font-light text-foreground hover:bg-gray-50 transition-colors border-b border-border last:border-b-0">
+                        <a href="<?php echo esc_url(home_url('/fbo-services')); ?>" class="block px-6 py-4 text-base font-light text-foreground hover:bg-gray-50 transition-colors border-b border-border last:border-b-0">
                             FBO Services
                         </a>
                     </div>
@@ -144,13 +143,13 @@
                     </svg>
                 </button>
                 <div class="mobile-services-items hidden pl-6 space-y-1 mt-1">
-                    <a href="<?php echo esc_url(home_url('/#luxury-travel')); ?>" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md transition-colors">
+                    <a href="<?php echo esc_url(home_url('/private-travel')); ?>" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md transition-colors">
                         Private Travel
                     </a>
-                    <a href="<?php echo esc_url(home_url('/#medical')); ?>" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md transition-colors">
+                    <a href="<?php echo esc_url(home_url('/medical-services')); ?>" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md transition-colors">
                         Medical Flights
                     </a>
-                    <a href="<?php echo esc_url(home_url('/#fbo-services')); ?>" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md transition-colors">
+                    <a href="<?php echo esc_url(home_url('/fbo-services')); ?>" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md transition-colors">
                         FBO Services
                     </a>
                 </div>

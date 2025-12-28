@@ -60,9 +60,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <!-- Emergency Dispatch Section -->
     <?php get_template_part('template-parts/medical/emergency-dispatch'); ?>
 
-    <!-- Medical Sample Transport Section -->
-    <?php get_template_part('template-parts/medical/medical-sample'); ?>
-
     <!-- Contact Section -->
     <div class="medical-section contact">
         <?php get_template_part('template-parts/contact'); ?>
@@ -71,5 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
     <!-- Medical Animations -->
     <?php get_template_part('template-parts/medical/animations'); ?>
 </div>
+
+<?php get_template_part('template-parts/scripts'); ?>
 
 <?php get_footer(); ?>

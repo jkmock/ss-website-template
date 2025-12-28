@@ -19,16 +19,16 @@ $team_members = array(
         'description' => 'David has flown high-performance aircraft for more than 25 years, accumulating over 7,500 hours of flight time. When he’s not flying, he enjoys outdoor adventure sports, hunting, and traveling with his family. Originally from West Virginia and a graduate of Marshall University, David has called North Carolina home since 1995.',
     ),
     array(
+        'name' => 'Reuben Savits',
+        'title' => 'Director of Business Operations',
+        'image' => get_template_directory_uri() . '/assets/images/team/reuben-savits-headshot.webp',
+        'description' => 'Reuben has been part of SkySouth since 2017 and acts as controller, human resources, and oversees accounts payable and receivable. He previously managed charter quotes and continues to play a key role in business operations. In his free time, Reuben enjoys traveling and spending time with his family.',
+    ),
+    array(
         'name' => 'Mike Ward',
         'title' => 'Captain',
         'image' => get_template_directory_uri() . '/assets/images/team/mike-ward-headshot.webp',
         'description' => 'Mike joined SkySouth in 2023 as a Captain. Originally from Burlington, Mike brings extensive experience and a deep passion for aviation to the team. He began flying at the age of 17 and has since built a diverse career in the industry. Before joining SkySouth, Mike spent 20 years in aircraft maintenance and 17 years as a flight instructor. He is a graduate of Liberty University, where he earned a B.S. in Aeronautics, and he now holds an Airline Transport Pilot certificate.',
-    ),
-    array(
-        'name' => 'Paul LoRusso',
-        'title' => 'Captain',
-        'image' => get_template_directory_uri() . '/assets/images/team/paul-lorusso-headshot.webp',
-        'description' => 'Paul has been flying since 1985 and flying for Sky South since 2022. He donates his time as a flight instructor to Missionary Air Group, teaching missionaries to become pilots. He also enjoys spending time with his children and grandchildren. He and his wife, Julie, live in Pittsboro and are active in their local church.',
     ),
     array(
         'name' => 'Sharon Raub',
@@ -37,16 +37,10 @@ $team_members = array(
         'description' => 'Sharon is a captain at SkySouth Aviation with extensive turbine jet experience and a strong background across multiple facets of the aviation industry. A Texas native, she has been based in North Carolina for over a decade and finds the critical transport work she does with SkySouth to be among the most meaningful aspects of her flying career.',
     ),
     array(
-        'name' => 'Reuben Savits',
-        'title' => 'Director of Business Operations',
-        'image' => get_template_directory_uri() . '/assets/images/team/reuben-savits-headshot.webp',
-        'description' => 'Reuben has been part of SkySouth since 2017 and acts as controller, human resources, and oversees accounts payable and receivable. He previously managed charter quotes and continues to play a key role in business operations. In his free time, Reuben enjoys traveling and spending time with his family.',
-    ),
-    array(
-        'name' => 'Sarah Vickers',
-        'title' => 'Dispatch Coordinator and Accounting',
-        'image' => get_template_directory_uri() . '/assets/images/team/sarah-vickers-headshot.webp',
-        'description' => 'Sarah has been part of SkySouth since 2022. She began her career on the line staff, gaining hands-on experience with aircraft operations before transitioning into her current role in Dispatch Coordinating and Accounting. Sarah plays a vital role in coordinating daily flight operations, managing schedules, and maintaining financial records.',
+        'name' => 'Paul LoRusso',
+        'title' => 'Captain',
+        'image' => get_template_directory_uri() . '/assets/images/team/paul-lorusso-headshot.webp',
+        'description' => 'Paul has been flying since 1985 and flying for Sky South since 2022. He donates his time as a flight instructor to Missionary Air Group, teaching missionaries to become pilots. He also enjoys spending time with his children and grandchildren. He and his wife, Julie, live in Pittsboro and are active in their local church.',
     ),
     array(
         'name' => 'Jack Huffines',
@@ -59,6 +53,12 @@ $team_members = array(
         'title' => 'Second in Command',
         'image' => get_template_directory_uri() . '/assets/images/team/parker-shelton-headshot.webp',
         'description' => 'Parker grew up in an aviation family and has been flying his entire life. While flying across the country with his family in a C182, his passion for aviation was fully sparked. He graduated from NC State University and worked as an aircraft broker before deciding to fly professionally. Parker started flying for SkySouth in 2024 and is the second member of his family to fly for SkySouth.',
+    ),
+    array(
+        'name' => 'Sarah Vickers',
+        'title' => 'Dispatch Coordinator and Accounting',
+        'image' => get_template_directory_uri() . '/assets/images/team/sarah-vickers-headshot.webp',
+        'description' => 'Sarah has been part of SkySouth since 2022. She began her career on the line staff, gaining hands-on experience with aircraft operations before transitioning into her current role in Dispatch Coordinating and Accounting. Sarah plays a vital role in coordinating daily flight operations, managing schedules, and maintaining financial records.',
     ),
 );
 ?>

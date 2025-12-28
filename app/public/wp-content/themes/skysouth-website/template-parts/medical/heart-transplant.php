@@ -40,7 +40,7 @@
         <!-- Right Half: Full Image -->
         <div class="medical-image relative min-h-[400px] lg:min-h-full translate-y-12 opacity-0 transition-all duration-700">
             <img
-                src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-sunset-vertical-centered.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-sunset-vertical-centered.jpg"
                 alt="Heart Transplant Medical Transport"
                 class="absolute inset-0 w-full h-full object-cover"
             />

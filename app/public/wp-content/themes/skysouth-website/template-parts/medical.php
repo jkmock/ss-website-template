@@ -11,7 +11,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
                 <!-- Left: Content -->
-                <div class="text-white">
+                <div class="text-white translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
                     <p class="text-m font-light tracking-[0.3em] uppercase text-white/60 mb-4">
                         Medical Flights
                     </p>
@@ -66,7 +66,7 @@
                     <!-- CTA Button -->
                     <div class="flex justify-center">
                         <a
-                            href="#contact"
+                            href="<?php echo esc_url(home_url('/medical-services')); ?>"
                             class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none border-2 border-white text-white bg-transparent hover:bg-white hover:text-[#0a1628] h-12 px-8 text-base"
                         >
                             Learn about medical flights
@@ -75,7 +75,7 @@
                 </div>
 
                 <!-- Right: Large Icon -->
-                <div class="flex items-center justify-center lg:justify-end">
+                <div class="flex items-center justify-center lg:justify-end translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate style="transition-delay: 150ms;">
                     <div class="relative">
                         <!-- Glow effect -->
                         <div class="absolute inset-0 bg-white/5 rounded-full blur-3xl"></div>

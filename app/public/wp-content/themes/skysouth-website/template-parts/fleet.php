@@ -8,7 +8,7 @@
 $fleet = array(
     array(
         'name' => 'Citation CJ1',
-        'image' => get_template_directory_uri() . '/assets/images/CJ1/cj1-background-2.png',
+        'image' => get_template_directory_uri() . '/assets/images/CJ1/cj1-background-2.jpg',
         'range' => '1,200 nm',
         'speed' => '415 mph',
         'passengers' => '4-5',
@@ -18,7 +18,7 @@ $fleet = array(
     ),
     array(
         'name' => 'Citation CJ3',
-        'image' => get_template_directory_uri() . '/assets/images/CJ3/cj3-sunset-vertical.png',
+        'image' => get_template_directory_uri() . '/assets/images/CJ3/cj3-sunset-vertical.jpg',
         'range' => '1,500 nm',
         'speed' => '480 mph',
         'passengers' => '6-7',

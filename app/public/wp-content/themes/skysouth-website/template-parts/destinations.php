@@ -94,7 +94,7 @@ $destinations = array(
 
         <!-- Get a Quote Button -->
         <div class="flex justify-center mt-20">
-            <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all outline-none h-10 px-10 text-lg bg-white text-foreground hover:bg-white/90">
+            <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none h-12 px-10 text-lg bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0a1628]">
                 Get a Quote
             </a>
         </div>

@@ -2,7 +2,7 @@
 <section class="relative w-full overflow-hidden" style="height: 100vh;">
     <!-- Background Image -->
     <img
-        src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-sunset-2.png"
+        src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-sunset-2.jpg"
         alt="Citation CJ1"
         class="absolute inset-0 w-full h-full object-cover"
         style="object-position: center 19%;"

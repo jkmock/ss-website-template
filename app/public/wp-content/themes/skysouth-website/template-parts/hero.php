@@ -9,7 +9,7 @@
 $hero_tagline = 'Elevate Your Journey';
 $hero_heading = 'Uncompromising Service. Competitive Light Jet Rates.';
 $hero_description = 'Established in 2003, we provide premier light jet charter services. We serve trips throughout the Eastern U.S. from our base in Burlington, NC.';
-$hero_image = get_template_directory_uri() . '/assets/images/sunsetjet2.png';
+$hero_image = get_template_directory_uri() . '/assets/images/sunsetjet2.jpg';
 $hero_button_1_text = 'View our Fleet';
 $hero_button_1_link = '#fleet'; // Update with actual link
 $hero_button_2_text = '24/7 Charter Dispatch';
