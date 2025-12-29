@@ -4,10 +4,10 @@
         <div class="max-w-6xl mx-auto">
             <!-- Section Header -->
             <div class="text-center mb-16 translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
-                <p class="text-sm font-light tracking-[0.3em] uppercase text-white/60 mb-4">
+                <p class="text-lg font-light tracking-[0.3em] uppercase text-white/60 mb-4">
                     Gallery
                 </p>
-                <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-white">
+                <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-white" style="font-variant-numeric: lining-nums;">
                     Explore the CJ1
                 </h2>
 

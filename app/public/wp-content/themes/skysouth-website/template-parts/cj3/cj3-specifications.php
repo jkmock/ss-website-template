@@ -3,14 +3,14 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="max-w-3xl mx-auto text-center mb-16 translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
-            <p class="text-sm font-light tracking-[0.3em] uppercase text-gray-600 mb-4">
-                Performance Specifications
+            <p class="text-lg font-light tracking-[0.3em] uppercase text-gray-600 mb-4">
+                Performance Specs
             </p>
             <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-[#0a1628]">
-                Built for Excellence
+                The Most Popular Light Jet
             </h2>
             <p class="text-lg font-light leading-relaxed text-gray-700">
-                The Citation CJ3 delivers exceptional performance metrics that place it at the forefront of light jet aviation, combining speed, range, and efficiency.
+                The Citation CJ3 delivers more space, speed, and range, making it the most popular jet in its’ category.
             </p>
         </div>
 
@@ -41,7 +41,7 @@
 
                         <!-- Description -->
                         <p class="text-m font-light leading-relaxed text-white/70">
-                            The Citation CJ3 offers remarkable speed paired with short-runway capability, making it a top performer in the light jet segment.
+                            The Citation CJ3 offers remarkable speed paired with short-runway capability, making it <span class="italic ">the</span> top performer in the light jet segment.
                         </p>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
 
                         <!-- Description -->
                         <p class="text-m font-light leading-relaxed text-white/70">
-                            Connect major regional cities without refueling. Perfect for business or family trips around the Eastern United States.
+                            Connect major regional cities without refueling. Perfect for business or family trips across the Eastern US and beyond..
                         </p>
                     </div>
                 </div>
@@ -123,13 +123,13 @@
                         <!-- Statistic -->
                         <div class="mb-4">
                             <h3 class="font-serif text-5xl font-light text-white leading-none">
-                                $4,200 <span class="text-xl text-white">/ hour</span>
+                                $3,500 <span class="text-xl text-white">/ hour</span>
                             </h3>
                         </div>
 
                         <!-- Description -->
                         <p class="text-m font-light leading-relaxed text-white/70">
-                            Experience the benefits of private travel at an exceptional value for a light jet. Contact us to get a quote for your next trip.
+                            Experience the most popular charter jet in the industry. Contact us to get a quote for your next trip.
                         </p>
                     </div>
                 </div>

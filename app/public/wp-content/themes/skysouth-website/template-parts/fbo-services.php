@@ -51,7 +51,7 @@ $icons = array(
             <div class="flex justify-center">
                 <div class="relative h-[400px] lg:h-[500px] w-full max-w-5xl">
                     <img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/Other/large-jet.JPG"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/Other/large-jet.jpg"
                         alt="Private Jet at FBO Facility"
                         class="w-full h-full object-cover shadow-lg"
                     />

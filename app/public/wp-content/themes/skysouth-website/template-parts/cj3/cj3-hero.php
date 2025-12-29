@@ -1,32 +1,40 @@
 <!-- Hero Section -->
 <section class="relative w-full overflow-hidden" style="height: 100vh;">
-    <!-- Background Image -->
+    <!-- Background Image - Desktop & Horizontal Tablet -->
     <img
-        src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-hero-3.jpg"
-        alt="Citation CJ1"
-        class="absolute inset-0 w-full h-full object-cover"
-        style="object-position: center 19%;"
+        src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-hero-4.jpg"
+        alt="Citation CJ3"
+        class="hidden lg:block absolute inset-0 w-full h-full object-cover cj3-hero-bg"
     />
 
+    <!-- Background Image - Mobile & Vertical Tablet -->
+    <img
+        src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-sunset-vertical.jpg"
+        alt="Citation CJ3"
+        class="block lg:hidden absolute inset-0 w-full h-full object-cover cj3-hero-bg-mobile"
+    />
+
+    <!-- Gradient Overlay - Mobile & Vertical Tablet Only -->
+    <div class="block lg:hidden absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60"></div>
 
     <!-- Left-Aligned Content -->
-    <div class="relative h-full flex items-center">
+    <div class="relative h-full flex items-end lg:items-center pb-32 lg:pb-0">
         <div class="container mx-auto px-8 sm:px-12 lg:px-16">
-            <div class="max-w-2xl text-white translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
+            <div class="max-w-xl lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl text-white translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
                 <!-- Tagline -->
-                <p class="text-sm font-light tracking-[0.3em] uppercase text-white mb-6">
-                    The Perfect Regional Jet
+                <p class="hidden lg:block text-lg font-light tracking-[0.3em] uppercase text-white mb-6">
+                    The most popular charter jet
                 </p>
 
                 <!-- Title -->
-                <h1 class="font-serif text-6xl sm:text-7xl md:text-8xl font-light mb-8">
+                <h1 class="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-light mb-8" style="font-variant-numeric: lining-nums;">
                     Citation CJ3
                 </h1>
 
                 <!-- Description -->
                 <div class="space-y-4 mb-10">
-                    <p class="text-xl font-light leading-relaxed text-white/90">
-                        The CJ3 has become a go-to option in the light jet category. It's comfort, speed, and range make it a leader in the segment.
+                    <p class="text-lg sm:text-xl font-light leading-relaxed text-white/90">
+                        The CJ3 is the most popular jet in the its' category.  The CJ3 provides the comfort, speed, and range that make it the best value for jet charter customers across the nation.
                     </p>
                 </div>
 
@@ -46,7 +54,7 @@
         class="absolute bottom-8 left-1/2 -translate-x-1/2 z-10 animate-bounce cursor-pointer"
         aria-label="Scroll down"
     >
-        <svg class="h-8 w-8 text-white opacity-75" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <svg class="h-12 w-12 text-white opacity-75" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
             <path d="m6 9 6 6 6-6"/>
         </svg>
     </button>
@@ -60,3 +68,26 @@ function scrollToContent() {
     });
 }
 </script>
+
+<style>
+/* Mobile & Vertical Tablet - show more of top */
+@media (max-width: 1023px) {
+    .cj3-hero-bg-mobile {
+        object-position: center top !important;
+    }
+}
+
+/* Horizontal Tablet / Small Desktop */
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .cj3-hero-bg {
+        object-position: 60% 10% !important;
+    }
+}
+
+/* Desktop */
+@media (min-width: 1280px) {
+    .cj3-hero-bg {
+        object-position: center 19% !important;
+    }
+}
+</style>

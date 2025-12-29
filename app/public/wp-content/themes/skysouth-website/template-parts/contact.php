@@ -60,27 +60,29 @@
                         </div>
                     </div>
 
-                    <!-- Address & FBO Hours -->
-                    <div class="bg-white p-8 rounded-lg border border-gray-200">
-                        <div class="grid grid-cols-2 gap-8">
-                            <!-- Address -->
-                            <div>
-                                <h3 class="font-serif text-2xl font-light mb-5 text-[#0a1628]">Address</h3>
-                                <div class="text-lg font-light text-[#0a1628] space-y-1.5">
-                                    <p>3441 North Aviation Drive</p>
-                                    <p>Burlington, NC 27215</p>
-                                    <p>United States</p>
-                                </div>
+                    <!-- Address & Hours - Two Boxes -->
+                    <div class="grid grid-cols-2 gap-4 items-start">
+                        <!-- Address Box -->
+                        <div class="bg-white p-8 rounded-lg border border-gray-200">
+                            <h3 class="font-serif text-2xl font-light mb-5 text-[#0a1628]">Address</h3>
+                            <div class="text-lg font-light text-[#0a1628] space-y-1.5">
+                                <p>3441 North Aviation Dr</p>
+                                <p>Burlington, NC 27215</p>
+                                <p>United States</p>
                             </div>
+                        </div>
 
-                            <!-- FBO Hours -->
-                            <div>
-                                <h3 class="font-serif text-2xl font-light mb-5 text-[#0a1628]">FBO Hours</h3>
-                                <div class="text-lg font-light text-[#0a1628] space-y-1.5">
-                                    <p>Weekdays: 7am - 7pm</p>
-                                    <p>Weekends: 8am - 6pm</p>
-                                    <p class="text-sm pt-2 text-gray-600">Please call for holiday hours</p>
-                                </div>
+                        <!-- Hours Box -->
+                        <div class="bg-white p-8 rounded-lg border border-gray-200">
+                            <h3 class="font-serif text-2xl font-light mb-5 text-[#0a1628]">Charter Hours</h3>
+                            <div class="text-lg font-light text-[#0a1628] space-y-1.5 mb-5">
+                                <p>Every Day: 24/7</p>
+                            </div>
+                            <h3 class="font-serif text-2xl font-light mb-5 text-[#0a1628]">FBO Hours</h3>
+                            <div class="text-lg font-light text-[#0a1628] space-y-1.5">
+                                <p>Weekdays: 7am - 7pm</p>
+                                <p>Weekends: 8am - 6pm</p>
+                                <p class="text-sm pt-2 text-gray-600">Please call for holiday hours. After hours service available by request.</p>
                             </div>
                         </div>
                     </div>
@@ -150,7 +152,7 @@
                                 <textarea
                                     id="message"
                                     name="message"
-                                    rows="5"
+                                    rows="11"
                                     class="w-full px-4 py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0a1628] focus:border-transparent transition-all resize-none text-base"
                                     placeholder="Number of Passengers, Departure and Arrival Location, One Way or Round Trip, Special Requests, etc."
                                 ></textarea>

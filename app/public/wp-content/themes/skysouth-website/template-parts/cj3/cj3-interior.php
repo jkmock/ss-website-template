@@ -2,16 +2,29 @@
 <section class="py-24 sm:py-32 bg-[#0a1628]">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-6xl mx-auto">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
                 <!-- Left: Text Content -->
                 <div class="translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
-                    <p class="text-sm font-light tracking-[0.3em] uppercase text-white/60 mb-4">
+                    <p class="text-center lg:text-left text-base md:text-lg font-light tracking-[0.3em] uppercase text-white/60 mb-4">
                         Cabin Experience
                     </p>
 
-                    <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-white">
-                        Interior Amenities
+                    <h2 class="text-center lg:text-left font-serif text-3xl md:text-4xl xl:text-5xl font-light mb-8 text-white" style="font-variant-numeric: lining-nums;">
+                        CJ3 Interior Amenities
                     </h2>
+
+                    <!-- Interior Image - Mobile/Tablet Only -->
+                    <div class="block lg:hidden mb-8">
+                        <div class="relative rounded-lg overflow-hidden shadow-2xl">
+                            <img
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-interior.jpg"
+                                alt="Citation CJ3 Interior"
+                                class="w-full h-auto object-cover"
+                                onerror="this.src='<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-background.png'"
+                            />
+                            <div class="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-lg pointer-events-none"></div>
+                        </div>
+                    </div>
 
                     <!-- Amenities List -->
                     <div class="space-y-4">
@@ -75,8 +88,8 @@
 
                 </div>
 
-                <!-- Right: Interior Image -->
-                <div class="translate-y-12 opacity-0 transition-all duration-1000 ease-out flex justify-center md:justify-end" data-animate style="transition-delay: 150ms;">
+                <!-- Right: Interior Image - Desktop Only -->
+                <div class="hidden lg:flex translate-y-12 opacity-0 transition-all duration-1000 ease-out justify-center lg:justify-end" data-animate style="transition-delay: 150ms;">
                     <div class="relative rounded-lg overflow-hidden shadow-2xl max-w-md">
                         <img
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-interior.jpg"

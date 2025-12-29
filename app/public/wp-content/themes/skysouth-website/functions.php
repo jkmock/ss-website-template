@@ -63,8 +63,11 @@ function custom_theme_setup() {
 add_action('after_setup_theme', 'custom_theme_setup');
 
 function custom_theme_assets() {
+    // Enqueue Google Fonts
+    wp_enqueue_style('skysouth-google-fonts', 'https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap', array(), null);
+
     // Enqueue the compiled Tailwind CSS with timestamp for cache busting during development
-    wp_enqueue_style('skysouth-main-style', get_template_directory_uri() . '/dist/style.css', array(), filemtime(get_template_directory() . '/dist/style.css'));
+    wp_enqueue_style('skysouth-main-style', get_template_directory_uri() . '/dist/style.css', array('skysouth-google-fonts'), filemtime(get_template_directory() . '/dist/style.css'));
 }
 add_action('wp_enqueue_scripts', 'custom_theme_assets');
 

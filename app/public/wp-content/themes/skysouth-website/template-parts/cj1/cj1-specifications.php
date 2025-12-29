@@ -3,14 +3,14 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="max-w-3xl mx-auto text-center mb-16 translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
-            <p class="text-sm font-light tracking-[0.3em] uppercase text-gray-600 mb-4">
-                Performance Specifications
+            <p class="text-lg font-light tracking-[0.3em] uppercase text-gray-600 mb-4">
+                Performance Specs
             </p>
             <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-[#0a1628]">
-                Built for Excellence
+                Performance and Value
             </h2>
             <p class="text-lg font-light leading-relaxed text-gray-700">
-                The Citation CJ1 delivers exceptional performance metrics that place it at the forefront of light jet aviation, combining speed, range, and efficiency.
+                The Citation CJ1 delivers exceptional performance that makes it a popular light jet, combining speed, range, and value.
             </p>
         </div>
 
@@ -41,7 +41,7 @@
 
                         <!-- Description -->
                         <p class="text-m font-light leading-relaxed text-white/70">
-                            The Citation CJ1 delivers true jet performance that places it in a different class from similarly sized turboprops.
+                            The Citation CJ1 provides jet performance and comfort at cost-effective pricing.
                         </p>
                     </div>
                 </div>
@@ -100,7 +100,7 @@
 
                         <!-- Description -->
                         <p class="text-m font-light leading-relaxed text-white/70">
-                            The club-style layout maximizes space and conversation. This cozy cabin is perfect for small groups and families.
+                            The club-style layout maximizes space and conversation. This cabin is perfect for small groups and families.
                         </p>
                     </div>
                 </div>
@@ -123,13 +123,13 @@
                         <!-- Statistic -->
                         <div class="mb-4">
                             <h3 class="font-serif text-5xl font-light text-white leading-none">
-                                $3,500 <span class="text-xl text-white">/ hour</span>
+                                $2,900 <span class="text-xl text-white">/ hour</span>
                             </h3>
                         </div>
 
                         <!-- Description -->
                         <p class="text-m font-light leading-relaxed text-white/70">
-                            Experience the benefits of private travel at an exceptional value for a light jet. Contact us to get a quote for your next trip.
+                            Experience the benefits of private jet travel at an exceptional value. Contact us to get a quote for your next trip.
                         </p>
                     </div>
                 </div>
