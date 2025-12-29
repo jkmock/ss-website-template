@@ -12,7 +12,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <!-- Content -->
-                <div class="medical-content translate-y-12 opacity-0 transition-all duration-700">
+                <div class="medical-content emergency-dispatch-content translate-y-12 opacity-0 transition-all duration-700">
                     <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-foreground">
                         24/7 Emergency Dispatch
                     </h2>
@@ -34,3 +34,11 @@
         </div>
     </div>
 </section>
+
+<style>
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .emergency-dispatch-content {
+        padding-left: 3rem;
+    }
+}
+</style>

@@ -11,9 +11,9 @@ $fleet = array(
         'image' => get_template_directory_uri() . '/assets/images/CJ1/cj1-background-2.jpg',
         'range' => '1,200 nm',
         'speed' => '415 mph',
-        'passengers' => '4-5',
-        'price' => '$3,500/hr',
-        'description' => 'Ideal for short regional flights with efficiency and comfort for up to 5 passengers.',
+        'guests' => '4-5',
+        'price' => '$2,900/hr',
+        'description' => 'Cost-effective comfort and flexibility for up to five passengers.',
         'link' => '/citation-cj1',
     ),
     array(
@@ -21,9 +21,9 @@ $fleet = array(
         'image' => get_template_directory_uri() . '/assets/images/CJ3/cj3-sunset-vertical.jpg',
         'range' => '1,500 nm',
         'speed' => '480 mph',
-        'passengers' => '6-7',
-        'price' => '$4,200/hr',
-        'description' => 'Bring more guests and enjoy a more spacious cabin. Take advantage of increased speed and range.',
+        'guests' => '6-7',
+        'price' => '$3,500/hr',
+        'description' => 'The most popular light jet in the industry.  Increased cabin space, speed, and range.',
         'link' => '/citation-cj3',
     ),
 );
@@ -41,14 +41,14 @@ $icons = array(
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 mb-8">
         <!-- Section Header -->
         <div class="mx-auto max-w-3xl text-center">
-            <p class="text-m font-light tracking-[0.3em] uppercase text-white/60 mb-4">
+            <p class="text-lg font-light tracking-[0.3em] uppercase text-white/60 mb-4">
                 Our Aircraft
             </p>
             <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-white">
                 Discover Our Fleet
             </h2>
             <p class="text-xl text-white/70 font-light leading-relaxed whitespace-nowrap">
-                Each aircraft in our fleet is meticulously maintained and ready to exceed your expectations.
+                Our jets are meticulously maintained and ready to exceed your expectations.
             </p>
         </div>
     </div>
@@ -79,7 +79,7 @@ $icons = array(
                         </h3>
 
                         <!-- Description -->
-                        <p class="text-white font-light leading-relaxed mb-8 max-w-md">
+                        <p class="text-white text-lg font-light leading-relaxed mb-8 max-w-md">
                             <?php echo esc_html($jet['description']); ?>
                         </p>
 
@@ -87,23 +87,23 @@ $icons = array(
                         <div class="flex gap-6 mb-8 pb-8 border-b border-white/20">
                             <div class="flex flex-col">
                                 <div class="text-white mb-2"><?php echo $icons['gauge']; ?></div>
-                                <span class="text-xs font-light text-white/70 uppercase tracking-wider">Speed</span>
-                                <span class="text-lg font-light text-white mt-1"><?php echo esc_html($jet['speed']); ?></span>
+                                <span class="text-lg font-light text-white/70 uppercase tracking-wider">Speed</span>
+                                <span class="text-xl font-light text-white mt-1"><?php echo esc_html($jet['speed']); ?></span>
                             </div>
                             <div class="flex flex-col">
                                 <div class="text-white mb-2"><?php echo $icons['map-pin']; ?></div>
-                                <span class="text-xs font-light text-white/70 uppercase tracking-wider">Range</span>
-                                <span class="text-lg font-light text-white mt-1"><?php echo esc_html($jet['range']); ?></span>
+                                <span class="text-lg font-light text-white/70 uppercase tracking-wider">Range</span>
+                                <span class="text-xl font-light text-white mt-1"><?php echo esc_html($jet['range']); ?></span>
                             </div>
                             <div class="flex flex-col">
                                 <div class="text-white mb-2"><?php echo $icons['users']; ?></div>
-                                <span class="text-xs font-light text-white/70 uppercase tracking-wider">Passengers</span>
-                                <span class="text-lg font-light text-white mt-1"><?php echo esc_html($jet['passengers']); ?></span>
+                                <span class="text-lg font-light text-white/70 uppercase tracking-wider">Guests</span>
+                                <span class="text-xl font-light text-white mt-1"><?php echo esc_html($jet['guests']); ?></span>
                             </div>
                             <div class="flex flex-col">
                                 <div class="text-white mb-2"><?php echo $icons['dollar-sign']; ?></div>
-                                <span class="text-xs font-light text-white/70 uppercase tracking-wider">Starting Price</span>
-                                <span class="text-lg font-light text-white mt-1"><?php echo esc_html($jet['price']); ?></span>
+                                <span class="text-lg font-light text-white/70 uppercase tracking-wider">From</span>
+                                <span class="text-xl font-light text-white mt-1"><?php echo esc_html($jet['price']); ?></span>
                             </div>
                         </div>
 

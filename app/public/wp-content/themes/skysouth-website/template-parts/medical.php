@@ -8,14 +8,14 @@
 
 <section id="medical" class="py-24 sm:py-32 bg-[#0a1628]">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="max-w-7xl mx-auto">
-            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+        <div class="max-w-7xl mx-auto medical-inner-container">
+            <div class="grid gap-12 lg:gap-16 items-center medical-grid">
                 <!-- Left: Content -->
-                <div class="text-white translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
-                    <p class="text-m font-light tracking-[0.3em] uppercase text-white/60 mb-4">
+                <div class="text-white translate-y-12 opacity-0 transition-all duration-1000 ease-out medical-content" data-animate>
+                    <p class="text-lg font-light tracking-[0.3em] uppercase text-white/60 mb-4">
                         Medical Flights
                     </p>
-                    <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 whitespace-nowrap">
+                    <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6">
                         Trusted by Medical Professionals
                     </h2>
                     <p class="text-xl font-light leading-relaxed text-white/80 mb-8">
@@ -34,7 +34,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="font-serif text-2xl font-light">Proven Safety Record</h3>
+                            <h3 class="font-serif text-lg lg:text-xl xl:text-2xl font-light">Proven Safety Record</h3>
                         </div>
 
                         <!-- Efficient and reliable -->
@@ -44,7 +44,7 @@
                                     <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-circle-gauge-icon lucide-circle-gauge"><path d="M15.6 2.7a10 10 0 1 0 5.7 5.7"/><circle cx="12" cy="12" r="2"/><path d="M13.4 10.6 19 5"/></svg>
                                 </div>
                             </div>
-                            <h3 class="font-serif text-2xl font-light">Efficient and Reliable</h3>
+                            <h3 class="font-serif text-lg lg:text-xl xl:text-2xl font-light">Efficient and Reliable</h3>
                         </div>
 
                         <!-- Experienced Crew -->
@@ -59,7 +59,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="font-serif text-2xl font-light">Experienced Crew</h3>
+                            <h3 class="font-serif text-lg lg:text-xl xl:text-2xl font-light">Experienced Crew</h3>
                         </div>
                     </div>
 
@@ -69,13 +69,13 @@
                             href="<?php echo esc_url(home_url('/medical-services')); ?>"
                             class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none border-2 border-white text-white bg-transparent hover:bg-white hover:text-[#0a1628] h-12 px-8 text-base"
                         >
-                            Learn about medical flights
+                            Learn about Medical Flights
                         </a>
                     </div>
                 </div>
 
                 <!-- Right: Large Icon -->
-                <div class="flex items-center justify-center lg:justify-end translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate style="transition-delay: 150ms;">
+                <div class="hidden xl:flex items-center justify-center lg:justify-end translate-y-12 opacity-0 transition-all duration-1000 ease-out medical-icon" data-animate style="transition-delay: 150ms;">
                     <div class="relative">
                         <!-- Glow effect -->
                         <div class="absolute inset-0 bg-white/5 rounded-full blur-3xl"></div>
@@ -89,3 +89,35 @@
         </div>
     </div>
 </section>
+
+<style>
+@media (min-width: 1280px) {
+    .medical-inner-container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .medical-grid {
+        grid-template-columns: 60% 40%;
+        gap: 0;
+        column-gap: 2rem;
+    }
+
+    .medical-icon {
+        justify-content: flex-start !important;
+        padding-left: 3rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .medical-inner-container {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .medical-grid {
+        grid-template-columns: 3fr 2fr;
+        column-gap: 4rem;
+    }
+}
+</style>

@@ -2,6 +2,7 @@
 /**
  * Template part for displaying the features section
  *
+ * Experience rapid boarding and takeoff with minimal wait times, getting you to your destination quickly
  * @package SkySouth_Website
  */
 
@@ -9,7 +10,7 @@ $features = array(
     array(
         'icon' => 'plane-takeoff',
         'title' => 'Fast Departures',
-        'description' => 'Experience rapid boarding and takeoff with minimal wait times, getting you to your destination quickly.',
+        'description' => 'No waiting.  We depart when you are ready.',
     ),
     array(
         'icon' => 'calendar-clock',
@@ -41,20 +42,20 @@ $icons = array(
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="mx-auto max-w-3xl text-center mb-20">
-            <p class="text-m font-light tracking-[0.3em] uppercase text-[#0a1628]/60 mb-4">
+            <p class="text-lg font-light tracking-[0.3em] uppercase text-[#0a1628]/60 mb-4">
                 The Ultimate Experience
             </p>
             <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-[#0a1628]">
                 Why Choose SkySouth
             </h2>
             <p class="text-xl text-[#0a1628]/70 font-light leading-relaxed">
-                Two decades of experience in the private aviation industry
+                Over two decades flying private charter aircraft
             </p>
         </div>
 
         <!-- Feature Cards Grid -->
         <div class="mx-auto max-w-7xl">
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 auto-rows-fr">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4 auto-rows-fr">
                 <?php foreach ($features as $index => $feature) : ?>
                     <div
                         class="feature-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-2 hover:border-white/20 min-h-[340px] rounded-lg translate-y-8 opacity-0"
@@ -111,3 +112,13 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 </script>
+
+<style>
+@media (min-width: 1024px) and (max-width: 1279px) {
+    #experiences .grid {
+        max-width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+</style>

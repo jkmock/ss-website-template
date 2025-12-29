@@ -33,10 +33,10 @@ $hero_button_2_link = '#contact'; // Update with actual link
     <div class="relative z-10 flex h-full items-center">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="max-w-5xl text-left text-white">
-                <p class="mb-6 text-m font-light tracking-[0.3em] uppercase opacity-90">
+                <p class="mb-6 text-lg font-light tracking-[0.3em] uppercase opacity-90">
                     <?php echo esc_html($hero_tagline); ?>
                 </p>
-                <h1 class="font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-8 max-w-4xl">
+                <h1 class="hero-title font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-8 max-w-4xl">
                     <?php echo esc_html($hero_heading); ?>
                 </h1>
                 <p class="text-l md:text-xl font-light leading-relaxed mb-12 max-w-2xl opacity-90">
@@ -81,3 +81,11 @@ function scrollToContent() {
     });
 }
 </script>
+
+<style>
+@media (min-width: 1024px) and (max-width: 1439px) {
+    .hero-title {
+        font-size: 3.75rem !important; /* 60px - text-6xl size */
+    }
+}
+</style>

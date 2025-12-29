@@ -18,7 +18,7 @@ $services = array(
     ),array(
         'icon' => 'amenities',
         'title' => 'Our Amenities',
-        'description' => 'Pilots enjoy our comfortable lounge, refreshments, and WIFI.',
+        'description' => 'Crews enjoy our comfortable lounge, refreshments, rest facilities and courtesy vehicles.',
     ),
 );
 
@@ -34,12 +34,16 @@ $icons = array(
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="mb-16 text-center translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
-            <p class="text-m font-light tracking-[0.3em] uppercase text-foreground/60 mb-4">
+            <p class="text-lg font-light tracking-[0.3em] uppercase text-foreground/60 mb-4">
                 Premium Facilities
             </p>
             <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-foreground">
                 First Class FBO Services
             </h2>
+
+            <p class="text-xl text-[#0a1628]/70 font-light leading-relaxed">
+                Our terminal in Burlington NC combines big city FBO amenities with small town friendliness.
+            </p>
         </div>
 
         <!-- Image Section -->

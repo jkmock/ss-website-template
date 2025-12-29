@@ -12,7 +12,7 @@
         <div class="bg-white flex items-center justify-center py-16 lg:py-24">
             <div class="w-full max-w-xl px-8 sm:px-12 lg:px-16 translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
                 <!-- Section Header -->
-                <p class="text-m font-light tracking-[0.3em] uppercase text-foreground/60 mb-4">
+                <p class="text-lg font-light tracking-[0.3em] uppercase text-foreground/60 mb-4">
                     Elevated Travel
                 </p>
                 <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-foreground whitespace-nowrap">
@@ -25,7 +25,7 @@
                 <!-- CTA Button -->
                 <div class="pt-4">
                     <a href="<?php echo esc_url(home_url('/private-travel')); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8">
-                        Learn about private charters
+                        Learn about Private Charters
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M5 12h14"/>
                             <path d="m12 5 7 7-7 7"/>

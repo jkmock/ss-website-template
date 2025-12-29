@@ -24,7 +24,7 @@
             </div>
 
             <!-- Desktop Navigation -->
-            <div class="hidden md:flex items-center space-x-8 ml-auto">
+            <div class="hidden lg:flex items-center ml-auto nav-desktop">
                 <a
                     href="<?php echo esc_url(home_url('/')); ?>"
                     class="nav-link text-base font-light tracking-widest uppercase transition-colors text-white hover:text-white/80"
@@ -101,7 +101,7 @@
             </div>
 
             <!-- Mobile Menu Button -->
-            <div class="md:hidden">
+            <div class="lg:hidden">
                 <button
                     id="mobile-menu-button"
                     type="button"
@@ -119,7 +119,7 @@
     </div>
 
     <!-- Mobile Menu Dropdown -->
-    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-border">
+    <div id="mobile-menu" class="hidden lg:hidden bg-white border-t border-border">
         <div class="px-4 pt-2 pb-3 space-y-1">
             <a
                 href="<?php echo esc_url(home_url('/')); ?>"
@@ -298,3 +298,15 @@ document.addEventListener('DOMContentLoaded', function() {
     handleScroll();
 });
 </script>
+
+<style>
+.nav-desktop {
+    gap: 2rem; /* Default spacing */
+}
+
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .nav-desktop {
+        gap: 1rem; /* Reduced spacing below 1280px */
+    }
+}
+</style>

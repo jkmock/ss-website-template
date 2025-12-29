@@ -7,10 +7,10 @@
 ?>
 
 <!-- FBO Services Overview Section -->
-<section class="relative h-screen w-full bg-[#0a1628] flex items-center justify-center">
+<section class="relative h-screen w-full bg-[#0a1628] flex items-center justify-center pt-20">
     <!-- Content -->
     <div class="container mx-auto px-4 sm:px-6 lg:px-8 text-center py-20">
-        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-light mb-6 text-white">
+        <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-light mb-4 text-white">
             FBO Services
         </h1>
 

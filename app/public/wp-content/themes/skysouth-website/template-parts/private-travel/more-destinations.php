@@ -21,7 +21,7 @@
                 </div>
 
                 <!-- Content -->
-                <div class="private-travel-content order-1 lg:order-2 translate-y-12 opacity-0 transition-all duration-700">
+                <div class="private-travel-content destinations-content order-1 lg:order-2 translate-y-12 opacity-0 transition-all duration-700">
                     <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-foreground">
                         Access More Destinations
                     </h2>
@@ -44,3 +44,12 @@
         </div>
     </div>
 </section>
+
+<style>
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .destinations-content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+</style>

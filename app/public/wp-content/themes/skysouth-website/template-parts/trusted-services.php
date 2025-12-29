@@ -17,7 +17,7 @@
         </div>
 
         <!-- Content Grid -->
-        <div class="trusted-services-content mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
+        <div class="trusted-services-content trusted-services-grid mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-5 gap-12 items-center">
             <!-- Image -->
             <div class="lg:col-span-2 relative h-[300px] overflow-hidden shadow-xl trusted-image -translate-x-12 opacity-0">
                 <img
@@ -75,5 +75,12 @@ document.addEventListener('DOMContentLoaded', function() {
 .trusted-image,
 .trusted-text {
     transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .trusted-services-grid {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
 }
 </style>

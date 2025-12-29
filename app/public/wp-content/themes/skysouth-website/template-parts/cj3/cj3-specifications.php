@@ -15,7 +15,7 @@
         </div>
 
         <div class="mx-auto max-w-7xl">
-            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4 auto-rows-fr">
+            <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4 auto-rows-fr cj3-specs-grid">
                 <!-- Speed Card -->
                 <div class="spec-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-2 hover:border-white/20 rounded-lg translate-y-8 opacity-0 p-8"
                     style="transition: transform 0.15s ease-out, box-shadow 0.15s ease-out, border-color 0.15s ease-out, opacity 0.7s ease-out, translate 0.7s ease-out; transition-delay: 0s, 0s, 0s, 0ms, 0ms;">
@@ -35,7 +35,7 @@
                         <!-- Statistic -->
                         <div class="mb-4">
                             <h3 class="font-serif text-5xl font-light text-white leading-none">
-                                480 <span class="text-3xl text-white">mph</span>
+                                480 <span class="text-2xl text-white">mph</span>
                             </h3>
                         </div>
 
@@ -65,7 +65,7 @@
                         <!-- Statistic -->
                         <div class="mb-4">
                             <h3 class="font-serif text-5xl font-light text-white leading-none">
-                                1,500 <span class="text-3xl text-white">nm</span>
+                                1,500 <span class="text-2xl text-white">nm</span>
                             </h3>
                         </div>
 
@@ -94,7 +94,7 @@
                         <!-- Statistic -->
                         <div class="mb-4">
                             <h3 class="font-serif text-5xl font-light text-white leading-none">
-                                6-7 <span class="text-3xl text-white">passengers</span>
+                                6-7 <span class="text-xl text-white">passengers</span>
                             </h3>
                         </div>
 
@@ -123,7 +123,7 @@
                         <!-- Statistic -->
                         <div class="mb-4">
                             <h3 class="font-serif text-5xl font-light text-white leading-none">
-                                $4,200 <span class="text-3xl text-white">/ hour</span>
+                                $4,200 <span class="text-xl text-white">/ hour</span>
                             </h3>
                         </div>
 
@@ -137,3 +137,13 @@
         </div>
     </div>
 </section>
+
+<style>
+@media (min-width: 1024px) and (max-width: 1279px) {
+    .cj3-specs-grid {
+        max-width: 48rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+</style>

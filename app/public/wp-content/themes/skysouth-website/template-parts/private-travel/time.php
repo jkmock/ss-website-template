@@ -12,7 +12,7 @@
         <div class="max-w-7xl mx-auto">
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                 <!-- Content -->
-                <div class="private-travel-content translate-y-12 opacity-0 transition-all duration-700">
+                <div class="private-travel-content time-content translate-y-12 opacity-0 transition-all duration-700">
                     <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-foreground">
                         Your Time is Valuable
                     </h2>
@@ -40,3 +40,12 @@
         </div>
     </div>
 </section>
+
+<style>
+@media (min-width: 1280px) and (max-width: 1439px) {
+    .time-content {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+}
+</style>
