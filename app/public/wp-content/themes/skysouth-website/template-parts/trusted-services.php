@@ -30,7 +30,7 @@
             <!-- Text Content -->
             <div class="lg:col-span-3 space-y-8 trusted-text translate-x-12 opacity-0">
                 <p class="text-xl text-foreground font-light leading-relaxed">
-                    Founded by Kevin Mock, SkySouth began with a single Baron aircraft and has grown into a full-service FBO and private jet charter operator based in Burlington, NC. Our team brings thousands of flight hours and a passion for delivering seamless, safe, and personalized aviation services to clients across the Piedmont Triad and beyond.
+                    Founded by Kevin Mock, SkySouth began with a single Baron aircraft and has grown into a full-service FBO and private jet charter operator based in Burlington, NC. Our team brings thousands of flight hours and a passion for delivering seamless, safe, and personalized aviation services to clients across the Eastern US and beyond.
                 </p>
                 <div class="flex justify-center">
                     <a href="<?php echo esc_url(home_url('/team')); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none bg-primary text-primary-foreground hover:bg-primary/90 h-12 px-8">

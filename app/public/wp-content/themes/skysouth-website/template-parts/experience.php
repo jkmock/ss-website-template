@@ -10,7 +10,7 @@
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="mx-auto max-w-3xl text-center mb-16">
-            <p class="text-m font-light tracking-[0.3em] uppercase text-muted-foreground mb-4">
+            <p class="text-lg font-light tracking-[0.3em] uppercase text-muted-foreground mb-4">
                 Decades of Experience
             </p>
             <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6">

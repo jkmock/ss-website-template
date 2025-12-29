@@ -4,14 +4,14 @@
         <div class="max-w-6xl mx-auto">
             <!-- Section Header -->
             <div class="text-center mb-16 translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
-                <p class="text-m font-light tracking-[0.3em] uppercase text-gray-600 mb-4">
+                <p class="text-lg font-light tracking-[0.3em] uppercase text-gray-600 mb-4">
                     Get In Touch
                 </p>
                 <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-[#0a1628]">
                     Contact Us
                 </h2>
                 <p class="text-xl font-light leading-relaxed text-gray-700 max-w-4xl mx-auto">
-                    Send us a message for trip requests and general inquiries - we'll reply within one business day.<br>If you need immediate assistance, please call our 24/7 dispatch line.
+                    Send us a message for trip requests and general inquiries - we'll reply within one business day.<br><span class="font-bold">If you need immediate assistance, please call our 24/7 dispatch line.</span>
                 </p>
             </div>
 
@@ -31,7 +31,7 @@
                             </div>
                         </div>
                         <a href="tel:+1234567890" class="text-3xl font-serif font-light text-white hover:text-white/90 transition-colors block">
-                            (123) 456-7890
+                            (336) 639-2151
                         </a>
                     </div>
 
@@ -42,19 +42,19 @@
                             <div>
                                 <p class="text-sm font-light uppercase tracking-wider text-gray-600 mb-1">FBO Front Desk</p>
                                 <a href="tel:+1234567891" class="text-lg font-light text-[#0a1628] hover:text-[#0a1628]/80 transition-colors">
-                                    (123) 456-7891
+                                    (336) 226-3330
                                 </a>
                             </div>
                             <div class="pt-4 border-t border-gray-200">
                                 <p class="text-sm font-light uppercase tracking-wider text-gray-600 mb-1">On-Duty Fuel Cell Phone</p>
                                 <a href="tel:+1234567892" class="text-lg font-light text-[#0a1628] hover:text-[#0a1628]/80 transition-colors">
-                                    (123) 456-7892
+                                    (336) 937-4188
                                 </a>
                             </div>
                             <div class="pt-4 border-t border-gray-200">
                                 <p class="text-sm font-light uppercase tracking-wider text-gray-600 mb-1">After Hours Fuel Service</p>
                                 <a href="tel:+1234567893" class="text-lg font-light text-[#0a1628] hover:text-[#0a1628]/80 transition-colors">
-                                    (123) 456-7893
+                                    (336) 223-4994
                                 </a>
                             </div>
                         </div>
@@ -67,7 +67,7 @@
                             <div>
                                 <h3 class="font-serif text-2xl font-light mb-5 text-[#0a1628]">Address</h3>
                                 <div class="text-lg font-light text-[#0a1628] space-y-1.5">
-                                    <p>123 Airport Drive</p>
+                                    <p>3441 North Aviation Drive</p>
                                     <p>Burlington, NC 27215</p>
                                     <p>United States</p>
                                 </div>
@@ -93,7 +93,7 @@
                         <form id="quote-form" class="space-y-4" novalidate>
                             <!-- Name -->
                             <div>
-                                <label for="name" class="block text-sm font-light text-gray-700 mb-2">Full Name *</label>
+                                <label for="name" class="block text-sm font-light text-gray-700 mb-2">Name *</label>
                                 <input
                                     type="text"
                                     id="name"
@@ -152,7 +152,7 @@
                                     name="message"
                                     rows="5"
                                     class="w-full px-4 py-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#0a1628] focus:border-transparent transition-all resize-none text-base"
-                                    placeholder="Number of passengers, departure/destination, special requests, etc."
+                                    placeholder="Number of Passengers, Departure and Arrival Location, One Way or Round Trip, Special Requests, etc."
                                 ></textarea>
                             </div>
 

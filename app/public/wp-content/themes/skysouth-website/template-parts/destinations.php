@@ -53,14 +53,14 @@ $destinations = array(
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <!-- Section Header -->
         <div class="mx-auto max-w-3xl text-center mb-16">
-            <p class="text-m font-light tracking-[0.3em] uppercase text-white/60 mb-4">
+            <p class="text-lg font-light tracking-[0.3em] uppercase text-white/60 mb-4">
                 Where We Fly
             </p>
             <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-white">
                 Popular Destinations
             </h2>
             <p class="text-xl text-white/70 font-light leading-relaxed">
-                Serving over 300 airports, including international destinations
+                We fly to the Continental US, Canada, Bermuda, and the Caribbean.
             </p>
         </div>
 
