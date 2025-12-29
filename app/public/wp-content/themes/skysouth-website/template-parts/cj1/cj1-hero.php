@@ -2,19 +2,16 @@
 <section class="relative w-full overflow-hidden" style="height: 100vh;">
     <!-- Background Image -->
     <img
-        src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ1/cj1-wide-2.jpg"
+        src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ1/cj1-hero-2.jpg"
         alt="Citation CJ1"
         class="absolute inset-0 w-full h-full object-cover"
         style="object-position: center 19%;"
     />
 
-    <!-- Gradient Overlay -->
-    <div class="absolute inset-0 bg-gradient-to-b from-black/30 via-black/40 to-black/60"></div>
-
-    <!-- Centered Content -->
-    <div class="relative h-full flex items-center justify-center">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-4xl mx-auto text-center text-white translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
+    <!-- Left-Aligned Content -->
+    <div class="relative h-full flex items-center">
+        <div class="container mx-auto px-8 sm:px-12 lg:px-16">
+            <div class="max-w-2xl text-white translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
                 <!-- Tagline -->
                 <p class="text-sm font-light tracking-[0.3em] uppercase text-white/80 mb-6">
                     The Perfect Regional Jet
@@ -26,15 +23,15 @@
                 </h1>
 
                 <!-- Description -->
-                <div class="max-w-2xl mx-auto space-y-4 mb-10">
-                    <p class="text-lg font-light leading-relaxed text-white/90">
+                <div class="space-y-4 mb-10">
+                    <p class="text-xl font-light leading-relaxed text-white/90">
                         The CJ1 is the perfect entry into the the world of private jet travel. Experience the luxury and convenience of traveling on your own time and flying in a quiet, private cabin.
                     </p>
                 </div>
 
                 <!-- CTA Button -->
-                <div class="mt-16">
-                    <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md font-medium transition-all outline-none bg-white text-foreground hover:bg-white/90 px-8 h-12 text-base">
+                <div>
+                    <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none bg-transparent border-2 border-white text-white hover:bg-white hover:text-foreground px-8 h-12 text-base">
                         Request a Quote
                     </a>
                 </div>

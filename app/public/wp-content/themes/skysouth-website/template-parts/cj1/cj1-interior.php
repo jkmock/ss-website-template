@@ -47,8 +47,19 @@
                         </div>
                     </div>
 
-
-
+                    <!-- Request a Quote Button -->
+                    <div class="pt-12">
+                        <a
+                            href="#contact"
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0a1628] h-12 px-8"
+                        >
+                            Request a Quote
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
 
                 </div>
 

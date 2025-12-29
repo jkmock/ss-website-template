@@ -67,7 +67,7 @@ $team_members = array(
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-7xl mx-auto">
             <!-- Section Header -->
-            <div class="mb-16 text-center">
+            <div class="mb-16 text-center translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
                 <h2 class="font-serif text-4xl sm:text-5xl font-light text-foreground">
                     Team Members
                 </h2>
@@ -76,7 +76,7 @@ $team_members = array(
             <!-- Team Members Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16">
                 <?php foreach ($team_members as $member) : ?>
-                    <div class="flex flex-col items-center text-center">
+                    <div class="flex flex-col items-center text-center translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
                         <!-- Photo -->
                         <div class="mb-6 w-64 h-64 overflow-hidden">
                             <img

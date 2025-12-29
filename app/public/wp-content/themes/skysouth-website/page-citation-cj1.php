@@ -15,9 +15,11 @@ get_header();
 
     <?php get_template_part('template-parts/cj1/cj1-gallery'); ?>
 
+    <?php get_template_part('template-parts/cj1/cj1-interior'); ?>
+
     <?php get_template_part('template-parts/cj1/cj1-performance'); ?>
 
-    <?php get_template_part('template-parts/cj1/cj1-interior'); ?>
+    <?php get_template_part('template-parts/cj1/cj1-explore-cj3'); ?>
 
     <?php get_template_part('template-parts/contact'); ?>
 

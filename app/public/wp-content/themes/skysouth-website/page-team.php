@@ -78,4 +78,6 @@ document.addEventListener('DOMContentLoaded', function() {
     <?php get_template_part('template-parts/team/team-members'); ?>
 </div>
 
+<?php get_template_part('template-parts/scripts'); ?>
+
 <?php get_footer(); ?>

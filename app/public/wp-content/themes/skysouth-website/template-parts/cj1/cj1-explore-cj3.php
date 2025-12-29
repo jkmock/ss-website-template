@@ -1,0 +1,48 @@
+<?php
+/**
+ * Template part for CJ1 page - Explore CJ3 section
+ *
+ * @package SkySouth_Website
+ */
+?>
+
+<!-- Explore CJ3 Section -->
+<section class="relative min-h-screen">
+    <div class="grid grid-cols-1 lg:grid-cols-2 h-full min-h-screen">
+        <!-- Left Half: Image -->
+        <div class="relative min-h-[400px] lg:min-h-full order-2 lg:order-1">
+            <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-sunset-2.jpg"
+                alt="Citation CJ3"
+                class="absolute inset-0 w-full h-full object-cover"
+            />
+        </div>
+
+        <!-- Right Half: Navy Background with Text -->
+        <div class="bg-[#0a1628] flex items-center justify-center py-16 lg:py-24 order-1 lg:order-2">
+            <div class="w-full max-w-xl px-8 sm:px-12 lg:px-16 translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
+                <p class="text-sm font-light tracking-[0.3em] uppercase text-white/60 mb-4">
+                    Need More?
+                </p>
+                <h2 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-light mb-6 text-white">
+                    Explore the Citation CJ3
+                </h2>
+                <p class="text-xl text-white/80 font-light leading-relaxed mb-6">
+                    The CJ3 offers enhanced range, speed, and cabin space compared to the CJ1. With seating for up to 7 passengers and a range of 1,500 nautical miles, it's perfect for longer regional trips.
+                </p>
+                <div class="pt-4">
+                    <a
+                        href="<?php echo esc_url(home_url('/citation-cj3')); ?>"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none bg-transparent border-2 border-white text-white hover:bg-white hover:text-[#0a1628] h-12 px-8"
+                    >
+                        Learn More About CJ3
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M5 12h14"/>
+                            <path d="m12 5 7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
