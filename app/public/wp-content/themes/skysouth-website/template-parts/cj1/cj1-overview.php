@@ -34,19 +34,19 @@
                                 <svg class="w-6 h-6 text-[#0a1628] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-base font-light text-gray-700">Maximum cruise speed of 415 mph for time-efficient travel</span>
+                                <span class="text-base font-light text-gray-700" style="font-variant-numeric: lining-nums;">Maximum cruise speed of 415 mph for time-efficient travel</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <svg class="w-6 h-6 text-[#0a1628] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-base font-light text-gray-700">Range of 1,200 nautical miles connecting major regional cities</span>
+                                <span class="text-base font-light text-gray-700" style="font-variant-numeric: lining-nums;">Range of 1,200 nautical miles connecting major regional cities</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <svg class="w-6 h-6 text-[#0a1628] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
                                 </svg>
-                                <span class="text-base font-light text-gray-700">Comfortable seating for 4-5 passengers in a refined cabin</span>
+                                <span class="text-base font-light text-gray-700" style="font-variant-numeric: lining-nums;">Comfortable seating for 4-5 passengers in a refined cabin</span>
                             </li>
                             <li class="flex items-start gap-3">
                                 <svg class="w-6 h-6 text-[#0a1628] flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

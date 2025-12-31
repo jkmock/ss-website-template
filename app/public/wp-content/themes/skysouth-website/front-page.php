@@ -15,14 +15,14 @@ get_header();
 
     <!-- Main Content -->
     <main>
-        <!-- Features Section -->
-        <?php get_template_part('template-parts/features'); ?>
+        <!-- Luxury Private Jet Travel Section -->
+        <?php get_template_part('template-parts/luxury-travel'); ?>
 
         <!-- Fleet Section -->
         <?php get_template_part('template-parts/fleet'); ?>
 
-        <!-- Luxury Private Jet Travel Section -->
-        <?php get_template_part('template-parts/luxury-travel'); ?>
+        <!-- Features Section -->
+        <?php get_template_part('template-parts/features'); ?>
 
         <!-- Medical Section -->
         <?php get_template_part('template-parts/medical'); ?>

@@ -6,52 +6,64 @@
  */
 
 // Hero content - can be moved to Customizer or ACF fields later
-$hero_tagline = 'Elevate Your Journey';
-$hero_heading = 'Uncompromising Service. Competitive Light Jet Rates.';
-$hero_description = 'Established in 2003, we provide premier light jet charter services. We serve trips throughout the Eastern U.S. from our base in Burlington, NC.';
-$hero_image = get_template_directory_uri() . '/assets/images/sunsetjet2.jpg';
+$hero_tagline = 'SkySouth Aviation';
+$hero_heading = 'Get There Faster.<br>Get Home Sooner.';
+$hero_description = 'We fly jets across the Eastern US and beyond.<br class="hidden lg:block"> Established in Burlington, NC in 2003.';
+$hero_image = get_template_directory_uri() . '/assets/images/CJ3/cj3-sunset-15.jpg';
 $hero_button_1_text = 'View our Fleet';
 $hero_button_1_link = '#fleet'; // Update with actual link
 $hero_button_2_text = '24/7 Charter Dispatch';
 $hero_button_2_link = '#contact'; // Update with actual link
 ?>
 
-<section class="relative h-screen w-full overflow-hidden">
-    <!-- Background Image -->
-    <div class="absolute inset-0 z-0">
-        <img
-            src="<?php echo esc_url($hero_image); ?>"
-            alt="Luxury private jet at sunset"
-            class="h-full w-full object-cover object-left scale-100"
-            style="transform-origin: left center;"
-        />
-        <!-- Overlay for better text readability -->
-        <div class="absolute inset-0 bg-black/30"></div>
-    </div>
+<section class="hero-section relative h-screen w-full overflow-hidden">
+    <!-- Background Image - Desktop -->
+    <img
+        src="<?php echo esc_url($hero_image); ?>"
+        alt="Luxury private jet at sunset"
+        class="hidden lg:block absolute inset-0 w-full h-full object-cover object-left"
+    />
+
+    <!-- Background Image - Mobile Only -->
+    <img
+        src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/hero-mobile-6.jpg"
+        alt="Luxury private jet at sunset"
+        class="block md:hidden absolute inset-0 w-full h-full object-cover"
+    />
+
+    <!-- Background Image - Tablet -->
+    <img
+        src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-sunset-16.jpg"
+        alt="Luxury private jet at sunset"
+        class="hidden md:block lg:hidden absolute inset-0 w-full h-full object-cover"
+    />
+
+    <!-- Gradient Overlay - Mobile & Tablet Only -->
+    <div class="block lg:hidden absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60"></div>
 
     <!-- Content -->
-    <div class="relative z-10 flex h-full items-center">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="max-w-5xl text-left text-white">
-                <p class="mb-6 text-lg font-light tracking-[0.3em] uppercase opacity-90">
+    <div class="relative h-full flex items-end pb-32 md:pb-48 lg:items-center lg:pb-0">
+        <div class="container mx-auto px-8 sm:px-12 lg:px-16">
+            <div class="max-w-xl lg:max-w-5xl text-white translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
+                <p class="hidden lg:block mb-6 text-lg font-light tracking-[0.3em] uppercase text-white/80">
                     <?php echo esc_html($hero_tagline); ?>
                 </p>
-                <h1 class="hero-title font-serif text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-light leading-tight mb-8 max-w-4xl">
-                    <?php echo esc_html($hero_heading); ?>
+                <h1 class="hero-title font-serif text-3xl sm:text-6xl lg:text-6xl font-light leading-tight mb-6 sm:mb-8 max-w-4xl">
+                    <?php echo wp_kses_post($hero_heading); ?>
                 </h1>
-                <p class="text-l md:text-xl font-light leading-relaxed mb-12 max-w-2xl opacity-90">
-                    <?php echo esc_html($hero_description); ?>
+                <p class="text-base sm:text-xl font-light leading-relaxed mb-8 sm:mb-10 max-w-2xl text-white/90">
+                    <?php echo wp_kses_post($hero_description); ?>
                 </p>
                 <div class="flex flex-col sm:flex-row items-start gap-4">
                     <a
                         href="<?php echo esc_url($hero_button_1_link); ?>"
-                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none border-2 border-white text-white bg-transparent hover:bg-white hover:text-foreground h-12 px-8 text-base w-full sm:w-56"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none border-2 border-white text-white bg-transparent hover:bg-white hover:text-foreground h-12 px-8 text-base w-full sm:w-auto"
                     >
                         <?php echo esc_html($hero_button_1_text); ?>
                     </a>
                     <a
                         href="<?php echo esc_url($hero_button_2_link); ?>"
-                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none border-2 border-transparent bg-white text-foreground hover:bg-white/90 h-12 px-8 text-base w-full sm:w-56"
+                        class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none border-2 border-transparent bg-white text-foreground hover:bg-white/90 h-12 px-8 text-base w-full sm:w-auto"
                     >
                         <?php echo esc_html($hero_button_2_text); ?>
                     </a>
@@ -85,7 +97,30 @@ function scrollToContent() {
 <style>
 @media (min-width: 1024px) and (max-width: 1439px) {
     .hero-title {
-        font-size: 3.75rem !important; /* 60px - text-6xl size */
+        font-size: 2.75rem !important; /* 44px */
+    }
+
+    .hero-section [data-animate] {
+        max-width: 42rem !important; /* 672px - max-w-2xl */
+    }
+
+    .hero-section [data-animate] p {
+        font-size: 1.25rem !important; /* 20px */
+        max-width: 32rem !important; /* 512px - max-w-lg */
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero-title {
+        font-size: 3.5rem !important; /* 56px */
+    }
+
+    .hero-section [data-animate] {
+        max-width: 48rem !important; /* 768px - max-w-3xl */
+    }
+
+    .hero-section [data-animate] p {
+        font-size: 1.5rem !important; /* 24px */
     }
 }
 </style>

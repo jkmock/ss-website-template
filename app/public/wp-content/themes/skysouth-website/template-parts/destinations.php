@@ -66,10 +66,10 @@ $destinations = array(
 
         <!-- Destinations Grid -->
         <div class="mx-auto max-w-7xl">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-6">
                 <?php foreach ($destinations as $index => $destination) : ?>
                     <div
-                        class="destination-card group relative h-80 overflow-hidden translate-y-12 opacity-0"
+                        class="destination-card group relative aspect-square lg:h-80 lg:aspect-auto overflow-hidden translate-y-12 opacity-0"
                         style="transition: transform 0.7s ease-out, opacity 0.7s ease-out; transition-delay: <?php echo $index * 100; ?>ms;"
                     >
                         <!-- Image -->
@@ -84,7 +84,7 @@ $destinations = array(
 
                         <!-- Text -->
                         <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
-                            <h3 class="font-serif text-3xl font-light mb-1"><?php echo esc_html($destination['name']); ?></h3>
+                            <h3 class="font-serif text-xl lg:text-3xl font-light mb-1"><?php echo esc_html($destination['name']); ?></h3>
                             <p class="text-sm font-light tracking-wider uppercase opacity-90"><?php echo esc_html($destination['location']); ?></p>
                         </div>
                     </div>

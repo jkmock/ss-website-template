@@ -10,15 +10,15 @@
                 The Most Popular Light Jet
             </h2>
             <p class="text-lg font-light leading-relaxed text-gray-700">
-                The Citation CJ3 delivers more space, speed, and range, making it the most popular jet in its’ category.
+                The Citation CJ3 delivers the space, range, and speed that make it the most popular jet in its’ category.
             </p>
         </div>
 
         <div class="mx-auto max-w-7xl">
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4 auto-rows-fr cj3-specs-grid">
                 <!-- Speed Card -->
-                <div class="spec-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-2 hover:border-white/20 rounded-lg translate-y-8 opacity-0 p-8"
-                    style="transition: transform 0.15s ease-out, box-shadow 0.15s ease-out, border-color 0.15s ease-out, opacity 0.7s ease-out, translate 0.7s ease-out; transition-delay: 0s, 0s, 0s, 0ms, 0ms;">
+                <div class="spec-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:scale-102 hover:border-white/20 rounded-lg translate-y-8 opacity-0 p-8"
+                    style="transition: all 0.5s ease-in-out, opacity 0.7s ease-out, translate 0.7s ease-out; transition-delay: 0s, 0s, 0ms;">
                     <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
                     <div class="relative h-full flex flex-col">
                         <!-- Icon & Label -->
@@ -34,8 +34,8 @@
 
                         <!-- Statistic -->
                         <div class="mb-4">
-                            <h3 class="font-serif text-5xl font-light text-white leading-none">
-                                480 <span class="text-2xl text-white">mph</span>
+                            <h3 class="font-serif text-4xl font-light text-white leading-none" style="font-variant-numeric: lining-nums;">
+                                480 <span class="text-lg text-white">mph</span>
                             </h3>
                         </div>
 
@@ -47,8 +47,8 @@
                 </div>
 
                 <!-- Range Card -->
-                <div class="spec-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-2 hover:border-white/20 rounded-lg translate-y-8 opacity-0 p-8"
-                    style="transition: transform 0.15s ease-out, box-shadow 0.15s ease-out, border-color 0.15s ease-out, opacity 0.7s ease-out, translate 0.7s ease-out; transition-delay: 0s, 0s, 0s, 100ms, 100ms;">
+                <div class="spec-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:scale-102 hover:border-white/20 rounded-lg translate-y-8 opacity-0 p-8"
+                    style="transition: all 0.5s ease-in-out, opacity 0.7s ease-out, translate 0.7s ease-out; transition-delay: 0s, 0s, 200ms;">
                     <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
                     <div class="relative h-full flex flex-col">
                         <!-- Icon & Label -->
@@ -64,21 +64,21 @@
 
                         <!-- Statistic -->
                         <div class="mb-4">
-                            <h3 class="font-serif text-5xl font-light text-white leading-none">
-                                1,500 <span class="text-2xl text-white">nm</span>
+                            <h3 class="font-serif text-4xl font-light text-white leading-none" style="font-variant-numeric: lining-nums;">
+                                1,500 <span class="text-lg text-white">nm</span>
                             </h3>
                         </div>
 
                         <!-- Description -->
                         <p class="text-m font-light leading-relaxed text-white/70">
-                            Connect major regional cities without refueling. Perfect for business or family trips across the Eastern US and beyond..
+                            Connect major regional cities without refueling. Perfect for business or family trips across the Eastern US and beyond.
                         </p>
                     </div>
                 </div>
 
                 <!-- Passengers Card -->
-                <div class="spec-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-2 hover:border-white/20 rounded-lg translate-y-8 opacity-0 p-8"
-                    style="transition: transform 0.15s ease-out, box-shadow 0.15s ease-out, border-color 0.15s ease-out, opacity 0.7s ease-out, translate 0.7s ease-out; transition-delay: 0s, 0s, 0s, 200ms, 200ms;">
+                <div class="spec-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:scale-102 hover:border-white/20 rounded-lg translate-y-8 opacity-0 p-8 transition-all duration-500"
+                    style="transition: all 0.5s ease-in-out, opacity 0.7s ease-out, translate 0.7s ease-out; transition-delay: 0s, 0s, 400ms;">
                     <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
                     <div class="relative h-full flex flex-col">
                         <!-- Icon & Label -->
@@ -93,8 +93,8 @@
 
                         <!-- Statistic -->
                         <div class="mb-4">
-                            <h3 class="font-serif text-5xl font-light text-white leading-none">
-                                6-7 <span class="text-xl text-white">passengers</span>
+                            <h3 class="font-serif text-4xl font-light text-white leading-none" style="font-variant-numeric: lining-nums;">
+                                6-7 <span class="text-lg text-white">passengers</span>
                             </h3>
                         </div>
 
@@ -106,8 +106,8 @@
                 </div>
 
                 <!-- Starting Price Card -->
-                <div class="spec-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-2 hover:border-white/20 rounded-lg translate-y-8 opacity-0 p-8"
-                    style="transition: transform 0.15s ease-out, box-shadow 0.15s ease-out, border-color 0.15s ease-out, opacity 0.7s ease-out, translate 0.7s ease-out; transition-delay: 0s, 0s, 0s, 300ms, 300ms;">
+                <div class="spec-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:scale-102 hover:border-white/20 rounded-lg translate-y-8 opacity-0 p-8 transition-all duration-500"
+                    style="transition: all 0.5s ease-in-out, opacity 0.7s ease-out, translate 0.7s ease-out; transition-delay: 0s, 0s, 600ms;">
                     <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
                     <div class="relative h-full flex flex-col">
                         <!-- Icon & Label -->
@@ -122,8 +122,8 @@
 
                         <!-- Statistic -->
                         <div class="mb-4">
-                            <h3 class="font-serif text-5xl font-light text-white leading-none">
-                                $3,500 <span class="text-xl text-white">/ hour</span>
+                            <h3 class="font-serif text-4xl font-light text-white leading-none" style="font-variant-numeric: lining-nums;">
+                                $3,500<span class="text-lg text-white"> / flight hr</span>
                             </h3>
                         </div>
 

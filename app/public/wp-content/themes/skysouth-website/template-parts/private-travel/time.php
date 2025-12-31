@@ -18,22 +18,22 @@
                     </h2>
                     <div class="space-y-6 text-lg text-foreground/70 font-light leading-relaxed">
                         <p>
-                            <span class="font-medium text-foreground">Skip the security lines.</span> Arrive at the airport just 15 minutes before departure. No two-hour airport buffer, no TSA checkpoints, no waiting at the gate. Board your aircraft and depart when you're ready.
+                            <span class="font-medium text-foreground">Get there faster. Get home sooner.</span> Only a private jet lets you to complete a full days work and still be home in time for dinner.
                         </p>
                         <p>
-                            <span class="font-medium text-foreground">Maximize your day.</span> Visit multiple cities in a single day without the constraints of commercial airline schedules. Our clients regularly complete business trips that would take 2-3 days commercially in just one day of private travel.
+                            <span class="font-medium text-foreground">Maximize your day.</span> Visit multiple cities in a single day without the constraints of commercial airline schedules. Our clients regularly complete business trips in one day that would take 2-3 days using commercial airlines.
                         </p>
                         <p>
-                            <span class="font-medium text-foreground">Work in flight.</span> Your cabin is a private conference room at 41,000 feet. Make confidential calls, review sensitive documents, or simply relax knowing you have complete privacy. No middle seats, no overhead conversations, no distractions.
+                            <span class="font-medium text-foreground">Meet with your team in flight.</span> Your cabin is a private conference room at 41,000 feet. Make confidential calls, review sensitive documents, or simply relax knowing you have complete privacy.
                         </p>
                         <p>
-                            <span class="font-medium text-foreground">Last-minute flexibility.</span> Need to change your departure time? Return earlier than planned? We adapt to your schedule, not the other way around. Your aircraft waits for you, not vice versa.
+                            <span class="font-medium text-foreground">Last-minute flexibility.</span> Need to change your departure time? Visit ended early? Your aircraft waits for you, not vice versa.
                         </p>
                     </div>
                 </div>
 
                 <!-- Icon -->
-                <div class="private-travel-image flex items-center justify-center translate-y-12 opacity-0 transition-all duration-700">
+                <div class="hidden lg:flex private-travel-image items-center justify-center translate-y-12 opacity-0 transition-all duration-700">
                     <svg xmlns="http://www.w3.org/2000/svg" width="320" height="320" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-clipboard-clock-icon lucide-clipboard-clock"><path d="M16 14v2.2l1.6 1"/><path d="M16 4h2a2 2 0 0 1 2 2v.832"/><path d="M8 4H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h2"/><circle cx="16" cy="16" r="6"/><rect x="8" y="2" width="8" height="4" rx="1"/></svg>
                 </div>
             </div>

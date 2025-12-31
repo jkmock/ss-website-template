@@ -48,7 +48,7 @@
                 </div>
 
                 <!-- Icon -->
-                <div class="fbo-image flex items-center justify-center translate-y-12 opacity-0 transition-all duration-700">
+                <div class="hidden lg:flex fbo-image items-center justify-center translate-y-12 opacity-0 transition-all duration-700">
                     <svg xmlns="http://www.w3.org/2000/svg" width="280" height="280" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="text-white">
                         <line x1="3" x2="15" y1="22" y2="22"/>
                         <line x1="4" x2="14" y1="9" y2="9"/>

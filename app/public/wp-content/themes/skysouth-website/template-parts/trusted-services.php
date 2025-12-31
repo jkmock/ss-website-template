@@ -11,7 +11,7 @@
         <!-- Section Header -->
         <div class="mx-auto max-w-3xl text-center mb-16">
             <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6">
-                Trusted Private Jet Charter and FBO Services
+                Trusted Private Charter and FBO Services
                 Since 2003
             </h2>
         </div>

@@ -14,14 +14,15 @@ get_header();
 
     <!-- Main Content -->
     <main>
-        <!-- Features Section -->
-        <?php get_template_part('template-parts/features'); ?>
+
+        <!-- FBO Services Section -->
+        <?php get_template_part('template-parts/fbo-services'); ?>
 
         <!-- Fleet Section -->
         <?php get_template_part('template-parts/fleet'); ?>
 
-        <!-- FBO Services Section -->
-        <?php get_template_part('template-parts/fbo-services'); ?>
+        <!-- Features Section -->
+        <?php get_template_part('template-parts/features'); ?>
 
         <!-- Trusted Services Section -->
         <?php get_template_part('template-parts/trusted-services'); ?>

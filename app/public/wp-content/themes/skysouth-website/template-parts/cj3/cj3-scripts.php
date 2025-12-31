@@ -27,9 +27,24 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Observe specification cards
+    // Observe specification cards with staggered animation
+    const specCardsObserver = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.remove('translate-y-8', 'opacity-0');
+                    entry.target.classList.add('translate-y-0', 'opacity-100');
+                }
+            });
+        },
+        {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        }
+    );
+
     document.querySelectorAll('.spec-card').forEach(card => {
-        observer.observe(card);
+        specCardsObserver.observe(card);
     });
 
     // Smooth scroll for anchor links

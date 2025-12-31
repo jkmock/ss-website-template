@@ -10,7 +10,7 @@ $features = array(
     array(
         'icon' => 'plane-takeoff',
         'title' => 'Fast Departures',
-        'description' => 'No waiting.  We depart when you are ready.',
+        'description' => 'No waiting. We depart on your schedule. Park right beside the jet and load your luggage with ease.',
     ),
     array(
         'icon' => 'calendar-clock',
@@ -24,8 +24,8 @@ $features = array(
     ),
     array(
         'icon' => 'building',
-        'title' => 'FBO Services',
-        'description' => 'Access premium Fixed-Base Operator facilities with luxury lounges, catering, and concierge services.',
+        'title' => 'Private Terminals',
+        'description' => 'We use private terminals away from commercial crowds and delays. Enjoy a smoother, more efficient travel day.',
     ),
 );
 
@@ -58,8 +58,8 @@ $icons = array(
             <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 xl:grid-cols-4 auto-rows-fr">
                 <?php foreach ($features as $index => $feature) : ?>
                     <div
-                        class="feature-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:-translate-y-2 hover:border-white/20 min-h-[340px] rounded-lg translate-y-8 opacity-0"
-                        style="transition: transform 0.15s ease-out, box-shadow 0.15s ease-out, border-color 0.15s ease-out, opacity 0.7s ease-out, translate 0.7s ease-out; transition-delay: 0s, 0s, 0s, <?php echo $index * 100; ?>ms, <?php echo $index * 100; ?>ms;"
+                        class="feature-card relative overflow-hidden bg-[#0a1628] border border-white/10 shadow-xl hover:shadow-2xl hover:scale-102 hover:border-white/20 min-h-[340px] rounded-lg translate-y-8 opacity-0"
+                        style="transition: all 0.5s ease-in-out, opacity 0.7s ease-out, translate 0.7s ease-out; transition-delay: 0s, 0s, <?php echo $index * 200; ?>ms;"
                     >
                         <!-- Subtle gradient overlay -->
                         <div class="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent pointer-events-none"></div>
@@ -79,7 +79,7 @@ $icons = array(
                             </h3>
 
                             <!-- Description -->
-                            <p class="text-base leading-relaxed text-center text-white/80 max-w-sm">
+                            <p class="text-base leading-relaxed text-left text-white/80 max-w-sm">
                                 <?php echo esc_html($feature['description']); ?>
                             </p>
                         </div>

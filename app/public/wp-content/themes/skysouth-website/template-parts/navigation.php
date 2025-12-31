@@ -127,12 +127,27 @@
             >
                 Home
             </a>
-            <a
-                href="<?php echo esc_url(home_url('/#fleet')); ?>"
-                class="block px-3 py-2 text-base font-light tracking-widest uppercase text-foreground hover:bg-accent rounded-md transition-colors"
-            >
-                Fleet
-            </a>
+
+            <!-- Fleet Submenu -->
+            <div class="mobile-fleet-submenu">
+                <button class="w-full flex items-center justify-between px-3 py-2 text-base font-light tracking-widest uppercase text-foreground hover:bg-accent rounded-md transition-colors">
+                    Fleet
+                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m6 9 6 6 6-6"/>
+                    </svg>
+                </button>
+                <div class="mobile-fleet-items hidden pl-6 space-y-1 mt-1">
+                    <a href="<?php echo esc_url(home_url('/citation-cj1')); ?>" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md transition-colors">
+                        Citation CJ1
+                    </a>
+                    <a href="<?php echo esc_url(home_url('/citation-cj3')); ?>" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md transition-colors">
+                        Citation CJ3
+                    </a>
+                    <a href="<?php echo esc_url(home_url('/#fleet')); ?>" class="block px-3 py-2 text-sm text-foreground hover:bg-accent rounded-md transition-colors">
+                        Full Fleet
+                    </a>
+                </div>
+            </div>
 
             <!-- Services Submenu -->
             <div class="mobile-services-submenu">
@@ -201,6 +216,13 @@ document.addEventListener('DOMContentLoaded', function() {
     function handleScroll() {
         const scrolled = window.scrollY > 50;
 
+        // Close mobile menu when scrolling
+        const isMenuOpen = !mobileMenu.classList.contains('hidden');
+        if (isMenuOpen) {
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+        }
+
         if (scrolled) {
             // Scrolled state - white background
             nav.classList.remove('bg-transparent', 'border-transparent');
@@ -235,7 +257,8 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Mobile menu toggle
-    mobileMenuButton.addEventListener('click', function() {
+    mobileMenuButton.addEventListener('click', function(e) {
+        e.stopPropagation();
         const isExpanded = mobileMenuButton.getAttribute('aria-expanded') === 'true';
         mobileMenuButton.setAttribute('aria-expanded', !isExpanded);
         mobileMenu.classList.toggle('hidden');
@@ -247,6 +270,18 @@ document.addEventListener('DOMContentLoaded', function() {
             mobileMenu.classList.add('hidden');
             mobileMenuButton.setAttribute('aria-expanded', 'false');
         });
+    });
+
+    // Close mobile menu when clicking outside
+    document.addEventListener('click', function(e) {
+        const isMenuOpen = !mobileMenu.classList.contains('hidden');
+        const clickedInsideMenu = mobileMenu.contains(e.target);
+        const clickedMenuButton = mobileMenuButton.contains(e.target);
+
+        if (isMenuOpen && !clickedInsideMenu && !clickedMenuButton) {
+            mobileMenu.classList.add('hidden');
+            mobileMenuButton.setAttribute('aria-expanded', 'false');
+        }
     });
 
     // Fleet dropdown functionality (desktop)
@@ -278,6 +313,16 @@ document.addEventListener('DOMContentLoaded', function() {
         servicesDropdown.addEventListener('mouseleave', function() {
             servicesDropdownMenu.classList.remove('opacity-100', 'visible');
             servicesDropdownMenu.classList.add('opacity-0', 'invisible');
+        });
+    }
+
+    // Mobile fleet submenu toggle
+    const mobileFleetSubmenu = document.querySelector('.mobile-fleet-submenu button');
+    const mobileFleetItems = document.querySelector('.mobile-fleet-items');
+
+    if (mobileFleetSubmenu && mobileFleetItems) {
+        mobileFleetSubmenu.addEventListener('click', function() {
+            mobileFleetItems.classList.toggle('hidden');
         });
     }
 

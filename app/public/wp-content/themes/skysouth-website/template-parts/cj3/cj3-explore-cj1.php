@@ -39,7 +39,7 @@
                 </div>
 
                 <p class="text-xl text-white/80 font-light leading-relaxed mb-6">
-                    The CJ1 offers an economical entry into private jet travel without sacrificing comfort or reliability. Perfect for shorter regional trips with up to 5 passengers and a range of 1,200 nautical miles.
+                    The CJ1 offers an economical entry into private jet travel without sacrificing comfort or reliability. Perfect for trips with up to 5 passengers and a range of 1,200 nautical miles.
                 </p>
                 <div class="pt-4">
                     <a

@@ -1,9 +1,9 @@
 <!-- Photo Gallery Section -->
-<section class="py-24 sm:py-32 bg-[#0a1628]">
+<section class="py-16 sm:py-24 lg:py-32 bg-[#0a1628]">
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-6xl mx-auto">
             <!-- Section Header -->
-            <div class="text-center mb-16 translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
+            <div class="text-center mb-12 sm:mb-16 translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
                 <p class="text-lg font-light tracking-[0.3em] uppercase text-white/60 mb-4">
                     Gallery
                 </p>

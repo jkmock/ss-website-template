@@ -11,19 +11,19 @@
         <div class="max-w-7xl mx-auto medical-inner-container">
             <div class="grid gap-12 lg:gap-16 items-center medical-grid">
                 <!-- Left: Content -->
-                <div class="text-white translate-y-12 opacity-0 transition-all duration-1000 ease-out medical-content" data-animate>
+                <div class="text-white translate-y-12 opacity-0 transition-all duration-1000 ease-out medical-content text-center md:text-left px-4 md:px-0" data-animate>
                     <p class="text-lg font-light tracking-[0.3em] uppercase text-white/60 mb-4">
                         Medical Flights
                     </p>
                     <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6">
                         Trusted by Medical Professionals
                     </h2>
-                    <p class="text-xl font-light leading-relaxed text-white/80 mb-8">
-                        Doctors and hospitals across the country rely on our proven safety record and unwavering reliability for critical medical transport. Our pilots are trusted to fly with time-sensitive organs, samples, and organ transplant teams onboard.
+                    <p class="text-xl font-light leading-relaxed text-white/80 mb-8 text-left">
+                        Doctors and hospitals across the country rely on our proven safety record and unwavering reliability for critical medical transport. Transplant surgeons rely on our pilots when they need to move quickly.
                     </p>
 
                     <!-- Key Points -->
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+                    <div class="hidden md:grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
                         <!-- Proven Safety Record -->
                         <div class="bg-white/5 p-6 rounded-lg border border-white/10 text-center">
                             <div class="flex justify-center mb-4">
@@ -59,7 +59,7 @@
                                     </svg>
                                 </div>
                             </div>
-                            <h3 class="font-serif text-lg lg:text-xl xl:text-2xl font-light">Experienced Crew</h3>
+                            <h3 class="font-serif text-lg lg:text-xl xl:text-2xl font-light">Experienced Crews</h3>
                         </div>
                     </div>
 

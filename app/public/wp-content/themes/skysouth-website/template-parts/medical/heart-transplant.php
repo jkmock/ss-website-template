@@ -15,6 +15,16 @@
                 <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-foreground">
                     Heart Transplant Teams
                 </h2>
+
+                <!-- Mobile/Tablet Image: Between title and text -->
+                <div class="lg:hidden mb-6">
+                    <img
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-sunset-vertical-centered.jpg"
+                        alt="Heart Transplant Medical Transport"
+                        class="w-full h-64 object-cover"
+                    />
+                </div>
+
                 <div class="space-y-4 text-xl text-foreground/70 font-light leading-relaxed mb-8">
                     <p>
                         Our pilots regularly fly with heart transplant teams, providing rapid and reliable transportation for these vital missions. When time is critical, medical networks count on our ability to respond rapidly and get a crew in the air without delay. Our efficiency, dependability, and flexibility help give these teams the best possible chance at a successful procedure.
@@ -37,8 +47,8 @@
             </div>
         </div>
 
-        <!-- Right Half: Full Image -->
-        <div class="medical-image relative min-h-[400px] lg:min-h-full translate-y-12 opacity-0 transition-all duration-700">
+        <!-- Right Half: Full Image - Desktop Only -->
+        <div class="hidden lg:block medical-image relative min-h-[400px] lg:min-h-full translate-y-12 opacity-0 transition-all duration-700">
             <img
                 src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-sunset-vertical-centered.jpg"
                 alt="Heart Transplant Medical Transport"

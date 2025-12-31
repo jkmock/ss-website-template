@@ -7,18 +7,25 @@
         class="hidden lg:block absolute inset-0 w-full h-full object-cover cj1-hero-bg"
     />
 
-    <!-- Background Image - Mobile & Vertical Tablet -->
+    <!-- Background Image - Mobile Only -->
+    <img
+        src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ1/cj1-background-5.jpg"
+        alt="Citation CJ1"
+        class="block md:hidden absolute inset-0 w-full h-full object-cover cj1-hero-bg-mobile"
+    />
+
+    <!-- Background Image - Vertical Tablet -->
     <img
         src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ1/cj1-background-3.jpg"
         alt="Citation CJ1"
-        class="block lg:hidden absolute inset-0 w-full h-full object-cover cj1-hero-bg-mobile"
+        class="hidden md:block lg:hidden absolute inset-0 w-full h-full object-cover cj1-hero-bg-mobile"
     />
 
     <!-- Gradient Overlay - Mobile & Vertical Tablet Only -->
     <div class="block lg:hidden absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/60"></div>
 
     <!-- Left-Aligned Content -->
-    <div class="relative h-full flex items-end lg:items-center pb-32 lg:pb-0">
+    <div class="relative h-full flex items-end pb-32 md:pb-48 lg:items-center lg:pb-0">
         <div class="container mx-auto px-8 sm:px-12 lg:px-16">
             <div class="max-w-xl lg:max-w-lg xl:max-w-xl 2xl:max-w-2xl text-white translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate>
                 <!-- Tagline -->
@@ -34,7 +41,7 @@
                 <!-- Description -->
                 <div class="space-y-4 mb-10">
                     <p class="text-lg sm:text-xl font-light leading-relaxed text-white/90">
-                        The CJ1 is the perfect entry into the the world of private jet travel. Experience the luxury and convenience of traveling on your own time and flying in a quiet, private cabin.
+                        The CJ1 is the perfect entry into the the world of private jet travel. Experience the luxury and convenience of flying on your schedule in quiet, private cabin.
                     </p>
                 </div>
 

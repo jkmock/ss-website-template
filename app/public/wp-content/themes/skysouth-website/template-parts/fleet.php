@@ -12,7 +12,7 @@ $fleet = array(
         'range' => '1,200 nm',
         'speed' => '415 mph',
         'guests' => '4-5',
-        'price' => '$2,900/hr',
+        'price' => '$2,900 / hr',
         'description' => 'Cost-effective comfort and flexibility for up to five passengers.',
         'link' => '/citation-cj1',
     ),
@@ -22,7 +22,7 @@ $fleet = array(
         'range' => '1,500 nm',
         'speed' => '480 mph',
         'guests' => '6-7',
-        'price' => '$3,500/hr',
+        'price' => '$3,500 / hr',
         'description' => 'The most popular light jet in the industry.  Increased cabin space, speed, and range.',
         'link' => '/citation-cj3',
     ),
@@ -47,7 +47,7 @@ $icons = array(
             <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-white">
                 Discover Our Fleet
             </h2>
-            <p class="text-xl text-white/70 font-light leading-relaxed whitespace-nowrap">
+            <p class="text-xl text-white/70 font-light leading-relaxed">
                 Our jets are meticulously maintained and ready to exceed your expectations.
             </p>
         </div>
@@ -57,19 +57,35 @@ $icons = array(
     <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10">
             <?php foreach ($fleet as $index => $jet) : ?>
-                <div class="jet-card relative h-[750px] overflow-hidden group" data-index="<?php echo $index; ?>">
+                <div class="jet-card relative h-[550px] md:h-[900px] lg:h-[750px] overflow-hidden group" data-index="<?php echo $index; ?>">
                     <!-- Background Image with Parallax -->
                     <div class="jet-parallax absolute inset-0 transition-transform duration-100 ease-out">
-                        <img
-                            src="<?php echo esc_url($jet['image']); ?>"
-                            alt="<?php echo esc_attr($jet['name']); ?>"
-                            class="h-full w-full object-cover scale-100"
-                        />
+                        <?php if ($jet['name'] === 'Citation CJ3') : ?>
+                            <!-- Mobile image for CJ3 -->
+                            <img
+                                src="<?php echo get_template_directory_uri(); ?>/assets/images/CJ3/cj3-sunset-vertical-mobile.jpg"
+                                alt="<?php echo esc_attr($jet['name']); ?>"
+                                class="md:hidden h-full w-full object-cover scale-100"
+                            />
+                            <!-- Tablet/Desktop image for CJ3 -->
+                            <img
+                                src="<?php echo esc_url($jet['image']); ?>"
+                                alt="<?php echo esc_attr($jet['name']); ?>"
+                                class="hidden md:block h-full w-full object-cover scale-100"
+                            />
+                        <?php else : ?>
+                            <!-- Standard image for other jets -->
+                            <img
+                                src="<?php echo esc_url($jet['image']); ?>"
+                                alt="<?php echo esc_attr($jet['name']); ?>"
+                                class="h-full w-full object-cover scale-100"
+                            />
+                        <?php endif; ?>
                         <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
                     </div>
 
                     <!-- Content Overlay -->
-                    <div class="relative h-full flex flex-col justify-end p-8 md:p-12 translate-y-12 opacity-0 jet-content">
+                    <div class="relative h-full flex flex-col justify-end p-6 md:p-12 translate-y-12 opacity-0 jet-content">
                         <!-- Subtle darkening behind text -->
                         <div class="absolute bottom-0 left-0 right-0 h-2/3 bg-gradient-to-t from-black/40 to-transparent -z-10"></div>
 
@@ -79,29 +95,25 @@ $icons = array(
                         </h3>
 
                         <!-- Description -->
-                        <p class="text-white text-lg font-light leading-relaxed mb-8 max-w-md">
+                        <p class="text-white text-lg font-light leading-relaxed mb-4 max-w-md">
                             <?php echo esc_html($jet['description']); ?>
                         </p>
 
                         <!-- Specifications -->
-                        <div class="flex gap-6 mb-8 pb-8 border-b border-white/20">
+                        <div class="grid grid-cols-2 gap-2 mb-2 pb-4 md:pb-8 pt-2 md:pt-0 border-b border-white/20 md:gap-6 md:flex md:mb-8">
                             <div class="flex flex-col">
-                                <div class="text-white mb-2"><?php echo $icons['gauge']; ?></div>
                                 <span class="text-lg font-light text-white/70 uppercase tracking-wider">Speed</span>
                                 <span class="text-xl font-light text-white mt-1"><?php echo esc_html($jet['speed']); ?></span>
                             </div>
                             <div class="flex flex-col">
-                                <div class="text-white mb-2"><?php echo $icons['map-pin']; ?></div>
                                 <span class="text-lg font-light text-white/70 uppercase tracking-wider">Range</span>
                                 <span class="text-xl font-light text-white mt-1"><?php echo esc_html($jet['range']); ?></span>
                             </div>
                             <div class="flex flex-col">
-                                <div class="text-white mb-2"><?php echo $icons['users']; ?></div>
                                 <span class="text-lg font-light text-white/70 uppercase tracking-wider">Guests</span>
                                 <span class="text-xl font-light text-white mt-1"><?php echo esc_html($jet['guests']); ?></span>
                             </div>
                             <div class="flex flex-col">
-                                <div class="text-white mb-2"><?php echo $icons['dollar-sign']; ?></div>
                                 <span class="text-lg font-light text-white/70 uppercase tracking-wider">From</span>
                                 <span class="text-xl font-light text-white mt-1"><?php echo esc_html($jet['price']); ?></span>
                             </div>
@@ -109,11 +121,12 @@ $icons = array(
 
                         <!-- CTA Buttons -->
                         <div class="flex gap-4">
-                            <a href="<?php echo esc_url($jet['link']); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none bg-white text-foreground hover:bg-white/90 px-8 h-10">
+                            <a href="<?php echo esc_url($jet['link']); ?>" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none bg-white text-foreground hover:bg-white/90 px-8 h-10 text-sm md:text-base">
                                 Learn more
                             </a>
-                            <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none border-2 border-white bg-transparent text-white hover:bg-white hover:text-foreground px-8 h-10">
-                                24/7 Charter Dispatch
+                            <a href="#contact" class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium transition-all outline-none border-2 border-white bg-transparent text-white hover:bg-white hover:text-foreground px-8 h-10 text-sm md:text-base">
+                                <span class="xl:hidden">24/7 Dispatch</span>
+                                <span class="hidden xl:inline">24/7 Charter Dispatch</span>
                             </a>
                         </div>
                     </div>
@@ -144,18 +157,55 @@ document.addEventListener('DOMContentLoaded', function() {
     jetCards.forEach(card => {
         observer.observe(card);
 
-        // Parallax effect on scroll
-        const parallaxElement = card.querySelector('.jet-parallax');
+        // Parallax effect on scroll - only on desktop
+        if (window.innerWidth >= 768) {
+            const parallaxElement = card.querySelector('.jet-parallax');
+            let ticking = false;
 
-        function updateParallax() {
-            const rect = card.getBoundingClientRect();
-            const scrollProgress = Math.max(0, Math.min(1, 1 - rect.top / window.innerHeight));
-            const scrollY = scrollProgress * 80;
-            parallaxElement.style.transform = `translateY(${scrollY}px)`;
+            function updateParallax() {
+                const rect = card.getBoundingClientRect();
+                const scrollProgress = Math.max(0, Math.min(1, 1 - rect.top / window.innerHeight));
+                const scrollY = scrollProgress * 80;
+                parallaxElement.style.transform = `translate3d(0, ${scrollY}px, 0)`;
+                ticking = false;
+            }
+
+            function requestTick() {
+                if (!ticking) {
+                    requestAnimationFrame(updateParallax);
+                    ticking = true;
+                }
+            }
+
+            window.addEventListener('scroll', requestTick, { passive: true });
+            updateParallax();
         }
-
-        window.addEventListener('scroll', updateParallax);
-        updateParallax();
     });
 });
 </script>
+
+<style>
+.jet-parallax {
+    will-change: transform;
+    transform: translateZ(0);
+    backface-visibility: hidden;
+}
+
+@media (max-width: 400px) {
+    .jet-card .flex.gap-4 a {
+        height: 2.25rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        font-size: 0.813rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .jet-card .flex.gap-4 a {
+        height: 2rem;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        font-size: 0.75rem;
+    }
+}
+</style>

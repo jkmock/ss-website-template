@@ -9,7 +9,7 @@ $services = array(
     array(
         'icon' => 'map-pin',
         'title' => 'Convenient Location',
-        'description' => 'Our location in Burlington puts Elon University, Chapel Hill, Durham, and Raleigh within driving distance.',
+        'description' => 'Our location in Burlington puts Elon University, Greensboro, Chapel Hill, Durham, and Raleigh within driving distance.',
     ),
     array(
         'icon' => 'plane',
@@ -38,7 +38,7 @@ $icons = array(
                 Premium Facilities
             </p>
             <h2 class="font-serif text-4xl sm:text-5xl font-light mb-6 text-foreground">
-                First Class FBO Services
+                First Class FBO Terminal
             </h2>
 
             <p class="text-xl text-[#0a1628]/70 font-light leading-relaxed">
@@ -49,9 +49,9 @@ $icons = array(
         <!-- Image Section -->
         <div class="max-w-7xl mx-auto mb-16 translate-y-12 opacity-0 transition-all duration-1000 ease-out" data-animate style="transition-delay: 150ms;">
             <div class="flex justify-center">
-                <div class="relative h-[400px] lg:h-[500px] w-full max-w-5xl">
+                <div class="relative h-[250px] md:h-[400px] lg:h-[500px] w-full max-w-5xl">
                     <img
-                        src="<?php echo get_template_directory_uri(); ?>/assets/images/Other/large-jet.jpg"
+                        src="<?php echo get_template_directory_uri(); ?>/assets/images/Other/large-jet-2.jpg"
                         alt="Private Jet at FBO Facility"
                         class="w-full h-full object-cover shadow-lg"
                     />

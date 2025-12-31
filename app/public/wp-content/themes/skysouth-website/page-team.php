@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 <!-- Large Team Photo -->
                 <div class="mb-12">
-                    <div class="relative h-[500px] lg:h-[650px] w-full overflow-hidden">
+                    <div class="relative h-[250px] md:h-[500px] lg:h-[650px] w-full overflow-hidden">
                         <img
                             src="<?php echo get_template_directory_uri(); ?>/assets/images/team/team-members.webp"
                             alt="SkySouth Team"
